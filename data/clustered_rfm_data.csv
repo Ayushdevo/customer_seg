@@ -1,0 +1,1178 @@
+client_id,Recency,Frequency,Monetary,R_Score,F_Score,M_Score,RFM_Segment,Customer_Segment,Cluster,Cluster_Name
+0,1,12160,703359.67,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+1,1,9931,352054.37,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+2,1,10104,331947.27,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+3,1,5947,286810.46,1,1,2,112,Lost Customers,0,Cluster 0
+4,1,14386,663287.36,1,5,4,154,At-Risk / High Spenders At Risk,2,Cluster 2
+5,1,4451,332238.6,1,1,2,112,Lost Customers,0,Cluster 0
+11,1,9782,623274.46,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+13,2,6807,279058.28,1,2,1,121,Lost Customers,0,Cluster 0
+14,1,4823,287154.77,1,1,2,112,Lost Customers,0,Cluster 0
+16,1,6469,425088.72,1,2,3,123,Lost Customers,0,Cluster 0
+17,1,16909,848213.04,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+19,1,3257,55196.4,1,1,1,111,Lost Customers,0,Cluster 0
+20,1,10608,342466.52,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+21,2,8234,342163.49,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+22,1,2838,112971.4,1,1,1,111,Lost Customers,0,Cluster 0
+24,1,8521,378949.05,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+27,1,9139,489083.13,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+28,1,6180,468540.92,1,2,3,123,Lost Customers,0,Cluster 0
+32,1,8054,360166.06,1,2,2,122,Lost Customers,0,Cluster 0
+33,1,10416,564663.9,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+34,1,13976,831858.22,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+37,1,11864,677613.8,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+38,1,13046,574490.48,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+39,1,14906,924654.44,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+40,1,6336,193837.65,1,2,1,121,Lost Customers,0,Cluster 0
+42,1,8040,274536.23,1,2,1,121,Lost Customers,0,Cluster 0
+44,1,7484,408630.76,1,2,3,123,Lost Customers,0,Cluster 0
+45,2,5794,112881.39,1,1,1,111,Lost Customers,0,Cluster 0
+46,1,8861,503059.25,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+47,1,10626,365217.32,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+48,1,7269,324106.97,1,2,2,122,Lost Customers,0,Cluster 0
+50,1,6458,302936.53,1,2,2,122,Lost Customers,0,Cluster 0
+51,1,8070,426400.35,1,2,3,123,Lost Customers,0,Cluster 0
+53,1,20313,1006607.38,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+55,1,13741,324462.94,1,5,2,152,At-Risk / High Spenders At Risk,2,Cluster 2
+57,1,10375,471330.16,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+58,2,6361,398873.45,1,2,3,123,Lost Customers,0,Cluster 0
+59,1,11446,349928.34,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+60,1,9902,652776.4,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+61,1,11495,825831.37,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+62,1,12656,466239.12,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+63,1,14967,375254.31,1,5,2,152,At-Risk / High Spenders At Risk,2,Cluster 2
+64,1,8869,589716.88,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+65,1,8455,368217.3,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+68,1,11848,705157.45,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+69,1,7890,307275.11,1,2,2,122,Lost Customers,0,Cluster 0
+73,1,6508,555198.27,1,2,4,124,Lost Customers,0,Cluster 0
+74,1,4390,244211.21,1,1,1,111,Lost Customers,0,Cluster 0
+75,1,10101,453944.22,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+77,1,13402,1043711.14,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+78,1127,8042,227017.65,1,2,1,121,Lost Customers,1,Cluster 1
+79,1,6276,350206.12,1,2,2,122,Lost Customers,0,Cluster 0
+80,1,7126,280872.11,1,2,1,121,Lost Customers,0,Cluster 0
+81,1,14164,649048.49,1,5,4,154,At-Risk / High Spenders At Risk,2,Cluster 2
+84,1,13809,429738.03,1,5,3,153,At-Risk / High Spenders At Risk,2,Cluster 2
+86,1,4057,144563.25,1,1,1,111,Lost Customers,0,Cluster 0
+87,1,11508,410394.01,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+89,1,12540,444926.54,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+90,1,8840,587507.57,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+92,1,11553,386327.24,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+94,1,12575,532356.08,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+98,1,19674,814609.62,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+100,1,6448,476657.36,1,2,3,123,Lost Customers,0,Cluster 0
+103,2,4485,286131.48,1,1,2,112,Lost Customers,0,Cluster 0
+104,1,7154,419499.23,1,2,3,123,Lost Customers,0,Cluster 0
+106,1,12813,327288.86,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+107,1,3687,203419.19,1,1,1,111,Lost Customers,0,Cluster 0
+110,1,5705,443202.13,1,1,3,113,Lost Customers,0,Cluster 0
+112,1,28244,1022460.42,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+113,2,5494,506921.97,1,1,4,114,Lost Customers,0,Cluster 0
+115,1,8404,735990.37,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+116,1,7954,432098.71,1,2,3,123,Lost Customers,0,Cluster 0
+118,1,5868,344720.06,1,1,2,112,Lost Customers,0,Cluster 0
+119,4,6913,442676.25,1,2,3,123,Lost Customers,0,Cluster 0
+120,1,4670,429224.05,1,1,3,113,Lost Customers,0,Cluster 0
+121,1,9826,564056.82,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+122,1,10074,447945.15,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+123,1,11303,340989.91,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+124,1,8511,250657.87,1,3,1,131,At-Risk / High Spenders At Risk,0,Cluster 0
+125,1,5976,197863.79,1,1,1,111,Lost Customers,0,Cluster 0
+126,1,10792,259741.72,1,4,1,141,At-Risk / High Spenders At Risk,0,Cluster 0
+127,1,10193,809202.53,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+128,1,7634,365448.98,1,2,2,122,Lost Customers,0,Cluster 0
+132,1,3693,183304.28,1,1,1,111,Lost Customers,0,Cluster 0
+133,1,8265,514837.24,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+134,1,6141,390064.3,1,1,3,113,Lost Customers,0,Cluster 0
+135,1,14864,800837.27,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+137,1,17889,974985.13,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+138,1,8221,363387.5,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+140,1,10309,340035.67,1,4,2,142,At-Risk / High Spenders At Risk,0,Cluster 0
+141,1,9807,442612.49,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+142,1,12363,824115.54,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+144,1,13485,506758.36,1,5,4,154,At-Risk / High Spenders At Risk,2,Cluster 2
+145,1,6077,187767.35,1,1,1,111,Lost Customers,0,Cluster 0
+146,1,6977,497001.67,1,2,4,124,Lost Customers,0,Cluster 0
+147,1,6341,417018.9,1,2,3,123,Lost Customers,0,Cluster 0
+148,1,10824,419429.97,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+149,1,3768,307250.85,1,1,2,112,Lost Customers,0,Cluster 0
+150,1,10968,724722.69,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+152,1,8667,860689.69,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+153,1,4061,286190.42,1,1,2,112,Lost Customers,0,Cluster 0
+154,1,15101,889307.05,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+155,1,7810,233730.32,1,2,1,121,Lost Customers,0,Cluster 0
+156,1,13112,341345.18,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+157,1,10853,514336.81,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+160,1,5207,210538.06,1,1,1,111,Lost Customers,0,Cluster 0
+161,1,13890,442756.16,1,5,3,153,At-Risk / High Spenders At Risk,2,Cluster 2
+162,1,7394,561634.26,1,2,4,124,Lost Customers,2,Cluster 2
+164,1,7710,342117.03,1,2,2,122,Lost Customers,0,Cluster 0
+169,1,7635,111839.07,1,2,1,121,Lost Customers,0,Cluster 0
+170,1,7552,414297.46,1,2,3,123,Lost Customers,0,Cluster 0
+171,1,14033,1127153.12,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+172,1,5060,254442.92,1,1,1,111,Lost Customers,0,Cluster 0
+173,1,9517,574493.53,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+176,1,14033,648902.57,1,5,4,154,At-Risk / High Spenders At Risk,2,Cluster 2
+177,1,8895,818414.93,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+178,1,9501,432525.61,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+180,1,6160,240339.54,1,1,1,111,Lost Customers,0,Cluster 0
+184,1,5876,326786.62,1,1,2,112,Lost Customers,0,Cluster 0
+185,1,11528,374099.57,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+190,1,18610,1098281.59,1,5,5,155,At-Risk / High Spenders At Risk,2,Cluster 2
+194,1,10828,619406.2,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+196,2,5250,294458.72,1,1,2,112,Lost Customers,0,Cluster 0
+197,1,12049,533346.94,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+198,1,4703,344235.74,1,1,2,112,Lost Customers,0,Cluster 0
+199,1,9520,497462.81,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+200,1,9716,402759.46,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+201,1,3630,200084.95,1,1,1,111,Lost Customers,0,Cluster 0
+203,1,5401,338106.43,1,1,2,112,Lost Customers,0,Cluster 0
+205,1,8447,395346.78,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+206,1,5035,332901.85,1,1,2,112,Lost Customers,0,Cluster 0
+207,1,4560,252281.28,1,1,1,111,Lost Customers,0,Cluster 0
+209,1,12355,388759.72,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+211,1,12309,243503.04,1,4,1,141,At-Risk / High Spenders At Risk,0,Cluster 0
+212,1,7385,217257.75,1,2,1,121,Lost Customers,0,Cluster 0
+213,1,10058,688174.12,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+216,4,4848,292212.49,1,1,2,112,Lost Customers,0,Cluster 0
+217,1,10459,420605.79,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+218,1,8298,323519.98,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+219,1,4974,182339.88,2,1,1,211,Lost Customers,0,Cluster 0
+220,1,4491,401070.39,2,1,3,213,Lost Customers,0,Cluster 0
+222,1,4899,666847.39,2,1,4,214,Lost Customers,0,Cluster 0
+225,1,7489,475271.94,2,2,3,223,Lost Customers,0,Cluster 0
+227,1,9211,709922.35,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+229,1,10634,513714.44,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+230,1,6198,306001.56,2,2,2,222,Lost Customers,0,Cluster 0
+231,1,9666,416104.63,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+233,1,5801,460522.58,2,1,3,213,Lost Customers,0,Cluster 0
+234,1,8400,492411.37,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+235,1,8327,453607.69,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+236,1,7314,697412.44,2,2,5,225,Lost Customers,2,Cluster 2
+237,2,5197,362074.57,1,1,2,112,Lost Customers,0,Cluster 0
+240,1,7749,272775.12,2,2,1,221,Lost Customers,0,Cluster 0
+241,1,11288,467281.12,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+242,1,8155,472888.75,2,2,3,223,Lost Customers,2,Cluster 2
+244,1,4751,268341.34,2,1,1,211,Lost Customers,0,Cluster 0
+246,1,6040,690698.75,2,1,5,215,Lost Customers,2,Cluster 2
+247,1,14467,1110029.62,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+248,1,5666,252191.29,2,1,1,211,Lost Customers,0,Cluster 0
+249,1,7536,306428.53,2,2,2,222,Lost Customers,0,Cluster 0
+250,1,11818,497085.55,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+252,1,14935,596810.96,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+254,1,17611,1068188.36,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+256,1,11550,480904.83,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+257,1,7935,484389.15,2,2,3,223,Lost Customers,2,Cluster 2
+260,1,4299,186724.36,2,1,1,211,Lost Customers,0,Cluster 0
+261,1,11187,718871.21,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+264,1,8730,424871.98,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+265,2,8164,358080.63,1,2,2,122,Lost Customers,0,Cluster 0
+267,1,3862,175584.25,2,1,1,211,Lost Customers,0,Cluster 0
+273,1,8938,522591.86,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+274,1,7263,465830.54,2,2,3,223,Lost Customers,0,Cluster 0
+275,1,20049,1056232.94,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+277,1,10669,323243.72,2,4,2,242,At-Risk / High Spenders At Risk,0,Cluster 0
+278,1,13812,1094399.57,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+280,1,9066,622356.02,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+282,1,7736,241661.57,2,2,1,221,Lost Customers,0,Cluster 0
+286,1,6323,247902.89,2,2,1,221,Lost Customers,0,Cluster 0
+287,1,9341,318956.88,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+291,1,16031,637211.75,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+293,2,8897,362028.12,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+299,2,3443,212775.31,1,1,1,111,Lost Customers,0,Cluster 0
+300,1,6348,444592.6,2,2,3,223,Lost Customers,0,Cluster 0
+301,1,11155,395600.42,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+305,1,9704,248918.16,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+311,1,5228,227622.35,2,1,1,211,Lost Customers,0,Cluster 0
+313,1,7182,278672.76,2,2,1,221,Lost Customers,0,Cluster 0
+315,2,3670,213720.01,1,1,1,111,Lost Customers,0,Cluster 0
+316,1,8995,712244.68,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+317,824,2983,204264.74,1,1,1,111,Lost Customers,1,Cluster 1
+319,1,7483,535625.72,2,2,4,224,Lost Customers,2,Cluster 2
+320,1,4448,365465.33,2,1,2,212,Lost Customers,0,Cluster 0
+321,2,7872,300269.23,1,2,2,122,Lost Customers,0,Cluster 0
+322,1,5957,142854.7,2,1,1,211,Lost Customers,0,Cluster 0
+323,1,13846,596379.36,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+327,1,19674,904948.24,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+328,1,8040,589543.14,2,2,4,224,Lost Customers,2,Cluster 2
+329,1,15540,651524.16,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+331,1,4903,282916.87,2,1,1,211,Lost Customers,0,Cluster 0
+332,1,10537,431315.96,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+334,1,3976,258162.61,2,1,1,211,Lost Customers,0,Cluster 0
+335,1,9632,689043.0,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+338,1,8672,545066.65,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+343,1,8699,308987.37,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+345,1,5183,279098.09,2,1,1,211,Lost Customers,0,Cluster 0
+346,1,8166,502242.35,2,2,4,224,Lost Customers,2,Cluster 2
+348,1,4590,306780.24,2,1,2,212,Lost Customers,0,Cluster 0
+349,1,10948,280562.0,2,4,1,241,At-Risk / High Spenders At Risk,0,Cluster 0
+350,1,11278,686974.8,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+351,1,8595,314913.76,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+354,1,9578,483501.03,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+356,1,17760,752956.56,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+357,1,10036,519776.57,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+359,1,10151,469857.15,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+360,1,14793,449603.15,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+361,1,6019,359961.63,2,1,2,212,Lost Customers,0,Cluster 0
+362,1,10760,817287.63,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+363,1,9517,518105.09,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+364,1,11829,689328.3,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+366,1,14700,530127.89,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+368,1,14956,610546.96,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+369,1,12482,951640.06,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+370,1,8026,287686.98,2,2,2,222,Lost Customers,0,Cluster 0
+373,1,16705,672967.05,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+374,1,7275,311891.79,2,2,2,222,Lost Customers,0,Cluster 0
+375,32,8369,287656.6,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+376,1,20538,917046.15,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+377,1,12386,756038.3,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+379,1,22606,608362.99,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+380,1,9931,346284.1,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+383,1,6161,263701.74,2,2,1,221,Lost Customers,0,Cluster 0
+385,1,8186,337562.34,2,2,2,222,Lost Customers,0,Cluster 0
+386,1,15651,748739.35,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+387,1554,5388,95093.36,1,1,1,111,Lost Customers,1,Cluster 1
+391,2,4708,288984.65,1,1,2,112,Lost Customers,0,Cluster 0
+393,1,5438,264949.69,2,1,1,211,Lost Customers,0,Cluster 0
+394,1,19643,726271.61,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+395,1,6747,436220.42,2,2,3,223,Lost Customers,0,Cluster 0
+397,1,8481,227316.93,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+398,3,5454,360113.69,1,1,2,112,Lost Customers,0,Cluster 0
+400,611,4807,186957.98,1,1,1,111,Lost Customers,1,Cluster 1
+401,1,13898,427055.73,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+402,1,11810,605315.24,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+403,1,3799,257192.19,2,1,1,211,Lost Customers,0,Cluster 0
+408,1,18438,1122028.11,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+410,1858,2126,109357.59,1,1,1,111,Lost Customers,1,Cluster 1
+414,1,7901,908825.86,2,2,5,225,Lost Customers,2,Cluster 2
+415,1,6976,273833.14,2,2,1,221,Lost Customers,0,Cluster 0
+416,1,8598,274530.96,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+419,1,11578,410341.65,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+421,1,18275,618329.45,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+425,1,17145,1043758.0,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+427,1,6543,301314.11,2,2,2,222,Lost Customers,0,Cluster 0
+428,1,9724,576505.19,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+430,1,20676,1148856.34,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+432,1,8322,517558.61,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+433,1,10894,437929.17,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+434,1,8109,485989.88,2,2,3,223,Lost Customers,2,Cluster 2
+437,1,8998,574593.76,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+438,1,4088,236904.31,2,1,1,211,Lost Customers,0,Cluster 0
+441,1,8134,381607.46,2,2,3,223,Lost Customers,0,Cluster 0
+442,1,13380,736804.0,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+447,1,7020,283829.45,2,2,2,222,Lost Customers,0,Cluster 0
+449,1,8190,399499.46,2,3,3,233,At-Risk / High Spenders At Risk,0,Cluster 0
+450,1,7460,468915.97,2,2,3,223,Lost Customers,0,Cluster 0
+451,1,6641,322857.09,2,2,2,222,Lost Customers,0,Cluster 0
+452,1,15061,825666.15,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+455,1,6682,461696.12,2,2,3,223,Lost Customers,0,Cluster 0
+456,1,13583,589492.58,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+457,1,8220,706577.59,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+458,1,3680,398479.63,2,1,3,213,Lost Customers,0,Cluster 0
+459,1,7480,346728.28,2,2,2,222,Lost Customers,0,Cluster 0
+460,1,11729,688783.6,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+461,1,20361,842919.45,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+462,1,10007,615825.36,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+465,1,5999,263161.47,2,1,1,211,Lost Customers,0,Cluster 0
+467,1,10887,462104.33,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+468,2,7418,382373.87,1,2,3,123,Lost Customers,0,Cluster 0
+469,2,9915,532346.87,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+470,1,9636,471464.09,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+472,1,16265,864375.72,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+473,1,6039,173381.15,2,1,1,211,Lost Customers,0,Cluster 0
+474,1,17129,961200.88,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+476,1,14708,903208.9,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+477,2,9274,560606.06,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+478,1,8108,478082.11,2,2,3,223,Lost Customers,2,Cluster 2
+479,1,9819,470740.52,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+480,2,10191,706991.33,1,3,5,135,At-Risk / High Spenders At Risk,2,Cluster 2
+483,4,5530,283118.53,1,1,1,111,Lost Customers,0,Cluster 0
+487,1,11144,813181.24,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+489,1,5428,310783.27,2,1,2,212,Lost Customers,0,Cluster 0
+491,2,3462,191565.19,1,1,1,111,Lost Customers,0,Cluster 0
+494,1,8794,415036.94,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+496,3,5317,280655.55,1,1,1,111,Lost Customers,0,Cluster 0
+497,1,10297,589802.83,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+502,1,22458,749974.03,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+503,1,9871,195225.68,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+506,1,14127,772490.38,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+509,1,10507,342806.78,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+511,1,22365,1048441.57,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+514,1,10519,459136.93,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+515,1,9289,292382.07,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+517,1,5820,181180.08,2,1,1,211,Lost Customers,0,Cluster 0
+519,1,8457,260022.9,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+520,1,9047,428296.52,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+523,1,8203,565392.54,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+524,2,5603,251076.39,1,1,1,111,Lost Customers,0,Cluster 0
+525,1,10740,463553.62,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+526,1,15082,684613.34,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+528,1,6802,331225.49,2,2,2,222,Lost Customers,0,Cluster 0
+530,1,13039,285934.96,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+534,1,11698,623599.66,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+538,1,8624,427985.7,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+542,1,7868,279282.11,2,2,1,221,Lost Customers,0,Cluster 0
+543,2,8657,425163.83,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+545,1,7047,377831.26,2,2,2,222,Lost Customers,0,Cluster 0
+546,1,7097,462643.64,2,2,3,223,Lost Customers,0,Cluster 0
+547,1,6291,245741.91,2,2,1,221,Lost Customers,0,Cluster 0
+549,1,5340,468387.21,2,1,3,213,Lost Customers,0,Cluster 0
+550,1,12827,662889.9,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+552,1,11273,913287.06,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+554,1,12745,707563.36,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+556,1,13167,437641.77,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+557,1,19342,688450.01,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+561,1,11213,369114.03,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+563,1,15339,870668.35,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+564,1,12521,561708.08,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+565,1,12480,661684.14,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+566,1,17630,658074.25,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+569,1,2221,121827.91,2,1,1,211,Lost Customers,0,Cluster 0
+570,1,8622,404387.35,2,3,3,233,At-Risk / High Spenders At Risk,0,Cluster 0
+571,1,14147,543519.36,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+573,1,12760,320900.68,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+575,1,7925,415198.42,2,2,3,223,Lost Customers,0,Cluster 0
+576,1,9301,522133.92,2,3,4,234,At-Risk / High Spenders At Risk,2,Cluster 2
+577,1,10312,356566.91,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+580,1,15648,586474.67,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+581,1,7462,288151.14,2,2,2,222,Lost Customers,0,Cluster 0
+582,1,2908,208355.11,2,1,1,211,Lost Customers,0,Cluster 0
+583,1,5590,235205.49,2,1,1,211,Lost Customers,0,Cluster 0
+584,1,9310,254339.64,2,3,1,231,At-Risk / High Spenders At Risk,0,Cluster 0
+585,1,13774,489027.09,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+586,1,7744,279489.46,2,2,1,221,Lost Customers,0,Cluster 0
+589,4,3464,143276.03,1,1,1,111,Lost Customers,0,Cluster 0
+592,1,20276,562098.81,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+595,1,5050,273535.26,2,1,1,211,Lost Customers,0,Cluster 0
+596,1,3365,159565.07,2,1,1,211,Lost Customers,0,Cluster 0
+597,1,12084,925593.3,2,4,5,245,At-Risk / High Spenders At Risk,2,Cluster 2
+598,1,25075,1170518.79,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+601,1,7859,311156.02,2,2,2,222,Lost Customers,0,Cluster 0
+602,1,14046,626096.86,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+604,1,7696,554436.63,2,2,4,224,Lost Customers,2,Cluster 2
+605,1,16408,402881.75,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+608,4,5889,152404.06,1,1,1,111,Lost Customers,0,Cluster 0
+609,1,8641,298854.53,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+613,1,11339,458454.01,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+614,1,7815,326755.5,2,2,2,222,Lost Customers,0,Cluster 0
+615,1,9775,734423.13,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+616,1,2775,113389.67,2,1,1,211,Lost Customers,0,Cluster 0
+618,2,5400,165404.35,1,1,1,111,Lost Customers,0,Cluster 0
+619,1,7404,407770.82,2,2,3,223,Lost Customers,0,Cluster 0
+621,2,6199,259771.02,1,2,1,121,Lost Customers,0,Cluster 0
+623,1,5196,423696.09,2,1,3,213,Lost Customers,0,Cluster 0
+628,1,7021,472257.24,2,2,3,223,Lost Customers,0,Cluster 0
+629,1,8492,776721.06,2,3,5,235,At-Risk / High Spenders At Risk,2,Cluster 2
+631,1,7894,374472.13,2,2,2,222,Lost Customers,0,Cluster 0
+633,1,4283,408928.85,2,1,3,213,Lost Customers,0,Cluster 0
+634,1,8870,488923.21,2,3,3,233,At-Risk / High Spenders At Risk,2,Cluster 2
+636,2,4574,207314.21,1,1,1,111,Lost Customers,0,Cluster 0
+637,1,14665,819427.6,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+638,1,4460,426154.37,2,1,3,213,Lost Customers,0,Cluster 0
+639,1,20094,572327.69,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+641,1,19901,761796.14,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+642,1,5637,372527.17,2,1,2,212,Lost Customers,0,Cluster 0
+643,1,11414,347655.88,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+644,1,5083,242051.32,2,1,1,211,Lost Customers,0,Cluster 0
+646,1,8164,371966.31,2,2,2,222,Lost Customers,0,Cluster 0
+647,1,6149,248999.31,2,1,1,211,Lost Customers,0,Cluster 0
+648,1,7427,163161.31,2,2,1,221,Lost Customers,0,Cluster 0
+649,1,9902,306768.4,2,3,2,232,At-Risk / High Spenders At Risk,0,Cluster 0
+650,1,5314,254840.95,2,1,1,211,Lost Customers,0,Cluster 0
+652,1,14199,441710.76,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+655,1,12504,352919.84,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+657,1,6175,274013.75,2,2,1,221,Lost Customers,0,Cluster 0
+658,1,13842,683895.27,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+659,1,11835,472142.27,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+660,1,5810,227503.74,2,1,1,211,Lost Customers,0,Cluster 0
+661,1,3670,116425.15,2,1,1,211,Lost Customers,0,Cluster 0
+662,1,13869,785318.15,2,5,5,255,At-Risk / High Spenders At Risk,2,Cluster 2
+663,1,12724,669479.06,2,4,4,244,At-Risk / High Spenders At Risk,2,Cluster 2
+665,1,10955,480189.76,2,4,3,243,At-Risk / High Spenders At Risk,2,Cluster 2
+667,1,14318,629471.13,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+668,1,13812,376734.16,2,5,2,252,At-Risk / High Spenders At Risk,2,Cluster 2
+669,1,10770,367908.96,2,4,2,242,At-Risk / High Spenders At Risk,2,Cluster 2
+671,1,6755,380849.27,2,2,3,223,Lost Customers,0,Cluster 0
+672,1,15139,439289.56,2,5,3,253,At-Risk / High Spenders At Risk,2,Cluster 2
+674,1,14579,326535.61,2,5,2,252,At-Risk / High Spenders At Risk,2,Cluster 2
+675,1,7470,293039.56,2,2,2,222,Lost Customers,0,Cluster 0
+676,1,14775,663519.79,2,5,4,254,At-Risk / High Spenders At Risk,2,Cluster 2
+677,1,7590,513831.71,3,2,4,324,Recent / New Customers,2,Cluster 2
+678,1,6082,201619.11,3,1,1,311,Recent / New Customers,0,Cluster 0
+679,1,5993,193353.91,3,1,1,311,Recent / New Customers,0,Cluster 0
+683,1,8029,466595.82,3,2,3,323,Recent / New Customers,2,Cluster 2
+684,1,5466,233218.53,3,1,1,311,Recent / New Customers,0,Cluster 0
+688,1,12757,475323.52,3,4,3,343,Loyal Customers,2,Cluster 2
+692,1,9979,348163.02,3,3,2,332,Loyal Customers,0,Cluster 0
+696,1,11438,883804.25,3,4,5,345,Loyal Customers,2,Cluster 2
+697,1,4035,379391.23,3,1,3,313,Recent / New Customers,0,Cluster 0
+699,1,11274,279246.08,3,4,1,341,Loyal Customers,0,Cluster 0
+702,1,12753,863680.43,3,4,5,345,Loyal Customers,2,Cluster 2
+705,1,19487,1075009.14,3,5,5,355,Loyal Customers,2,Cluster 2
+706,1,7425,532146.16,3,2,4,324,Recent / New Customers,2,Cluster 2
+708,1,8217,1181548.64,3,3,5,335,Loyal Customers,2,Cluster 2
+709,1,7178,269606.29,3,2,1,321,Recent / New Customers,0,Cluster 0
+711,32,11168,735157.08,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+712,1,7599,350349.01,3,2,2,322,Recent / New Customers,0,Cluster 0
+714,1,8874,304720.1,3,3,2,332,Loyal Customers,0,Cluster 0
+716,1,13577,556866.2,3,5,4,354,Loyal Customers,2,Cluster 2
+719,1,10658,529216.71,3,4,4,344,Loyal Customers,2,Cluster 2
+720,2,3408,155131.71,1,1,1,111,Lost Customers,0,Cluster 0
+721,1,10503,283828.62,3,4,2,342,Loyal Customers,0,Cluster 0
+723,1,9553,277266.25,3,3,1,331,Loyal Customers,0,Cluster 0
+724,2,6021,351729.35,1,1,2,112,Lost Customers,0,Cluster 0
+726,1,9258,269742.33,3,3,1,331,Loyal Customers,0,Cluster 0
+727,1,10753,313908.31,3,4,2,342,Loyal Customers,0,Cluster 0
+728,2,6400,294738.04,1,2,2,122,Lost Customers,0,Cluster 0
+729,1,8736,421271.57,3,3,3,333,Loyal Customers,2,Cluster 2
+731,3,3364,278701.37,1,1,1,111,Lost Customers,0,Cluster 0
+732,2,5502,323419.16,1,1,2,112,Lost Customers,0,Cluster 0
+733,1,14515,1090546.38,3,5,5,355,Loyal Customers,2,Cluster 2
+734,1,10444,192961.38,3,4,1,341,Loyal Customers,0,Cluster 0
+737,1,15136,706051.73,3,5,5,355,Loyal Customers,2,Cluster 2
+738,1,10216,829961.22,3,3,5,335,Loyal Customers,2,Cluster 2
+742,1,7699,538518.43,3,2,4,324,Recent / New Customers,2,Cluster 2
+743,2,5520,308615.68,1,1,2,112,Lost Customers,0,Cluster 0
+744,2,8220,344268.4,1,3,2,132,At-Risk / High Spenders At Risk,0,Cluster 0
+746,1,12147,453207.78,3,4,3,343,Loyal Customers,2,Cluster 2
+747,1,9468,269943.22,3,3,1,331,Loyal Customers,0,Cluster 0
+748,1,6150,311534.73,3,1,2,312,Recent / New Customers,0,Cluster 0
+750,1,4982,246532.65,3,1,1,311,Recent / New Customers,0,Cluster 0
+751,1,6624,492049.01,3,2,3,323,Recent / New Customers,0,Cluster 0
+752,1,5421,526148.53,3,1,4,314,Recent / New Customers,0,Cluster 0
+753,2,5605,228343.62,1,1,1,111,Lost Customers,0,Cluster 0
+754,1,14382,759311.21,3,5,5,355,Loyal Customers,2,Cluster 2
+755,1,5106,234804.09,3,1,1,311,Recent / New Customers,0,Cluster 0
+756,3,4914,502871.22000000003,1,1,4,114,Lost Customers,0,Cluster 0
+757,1,10330,647800.51,3,4,4,344,Loyal Customers,2,Cluster 2
+758,1,13951,257678.92,3,5,1,351,Loyal Customers,2,Cluster 2
+759,1,6608,414174.65,3,2,3,323,Recent / New Customers,0,Cluster 0
+760,1,13650,551329.61,3,5,4,354,Loyal Customers,2,Cluster 2
+762,1,9650,472668.55,3,3,3,333,Loyal Customers,2,Cluster 2
+763,1,13030,1074425.08,3,4,5,345,Loyal Customers,2,Cluster 2
+764,1,7964,472661.0,3,2,3,323,Recent / New Customers,2,Cluster 2
+771,1,4975,333239.83,3,1,2,312,Recent / New Customers,0,Cluster 0
+772,1,6595,227183.95,3,2,1,321,Recent / New Customers,0,Cluster 0
+773,1,10384,377978.7,3,4,3,343,Loyal Customers,2,Cluster 2
+774,1,6662,324869.13,3,2,2,322,Recent / New Customers,0,Cluster 0
+776,1,8735,928122.43,3,3,5,335,Loyal Customers,2,Cluster 2
+779,1,17419,822157.12,3,5,5,355,Loyal Customers,2,Cluster 2
+780,1,7076,249479.18,3,2,1,321,Recent / New Customers,0,Cluster 0
+782,1,17847,944121.48,3,5,5,355,Loyal Customers,2,Cluster 2
+783,1,6076,256274.44,3,1,1,311,Recent / New Customers,0,Cluster 0
+789,1,7660,421514.71,3,2,3,323,Recent / New Customers,0,Cluster 0
+790,1,11555,438634.32,3,4,3,343,Loyal Customers,2,Cluster 2
+791,1,5426,332829.25,3,1,2,312,Recent / New Customers,0,Cluster 0
+793,1,7164,342886.57,3,2,2,322,Recent / New Customers,0,Cluster 0
+794,1,2579,149366.64,3,1,1,311,Recent / New Customers,0,Cluster 0
+795,1,15539,971722.43,3,5,5,355,Loyal Customers,2,Cluster 2
+797,1,6684,397153.06,3,2,3,323,Recent / New Customers,0,Cluster 0
+798,1,5539,488871.91,3,1,3,313,Recent / New Customers,0,Cluster 0
+799,1,5155,293253.48,3,1,2,312,Recent / New Customers,0,Cluster 0
+801,1,6916,276473.46,3,2,1,321,Recent / New Customers,0,Cluster 0
+802,1,10195,629121.24,3,3,4,334,Loyal Customers,2,Cluster 2
+803,1,10480,268483.94,3,4,1,341,Loyal Customers,0,Cluster 0
+804,1,15003,525850.83,3,5,4,354,Loyal Customers,2,Cluster 2
+807,1,5726,288485.68,3,1,2,312,Recent / New Customers,0,Cluster 0
+808,1,9637,794190.14,3,3,5,335,Loyal Customers,2,Cluster 2
+810,1,13997,671514.33,3,5,4,354,Loyal Customers,2,Cluster 2
+811,1,12170,851560.55,3,4,5,345,Loyal Customers,2,Cluster 2
+814,1,11468,472497.87,3,4,3,343,Loyal Customers,2,Cluster 2
+816,1,6871,354262.06,3,2,2,322,Recent / New Customers,0,Cluster 0
+819,1,7396,345639.02,3,2,2,322,Recent / New Customers,0,Cluster 0
+820,1,13759,704265.18,3,5,5,355,Loyal Customers,2,Cluster 2
+821,1,5119,172232.09,3,1,1,311,Recent / New Customers,0,Cluster 0
+822,1,6899,287382.56,3,2,2,322,Recent / New Customers,0,Cluster 0
+823,1,6272,351996.35,3,2,2,322,Recent / New Customers,0,Cluster 0
+825,2,11007,965410.3,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+826,1,3893,329699.07,3,1,2,312,Recent / New Customers,0,Cluster 0
+827,1,7235,325426.48,3,2,2,322,Recent / New Customers,0,Cluster 0
+828,1,19792,633180.92,3,5,4,354,Loyal Customers,2,Cluster 2
+831,1,6860,396066.46,3,2,3,323,Recent / New Customers,0,Cluster 0
+832,1,5646,488805.33,3,1,3,313,Recent / New Customers,0,Cluster 0
+837,1,6342,301937.79,3,2,2,322,Recent / New Customers,0,Cluster 0
+839,2,4317,386377.54,1,1,3,113,Lost Customers,0,Cluster 0
+843,1,6897,320694.63,3,2,2,322,Recent / New Customers,0,Cluster 0
+844,1,2488,169941.33,3,1,1,311,Recent / New Customers,0,Cluster 0
+845,1,10779,498067.76,3,4,4,344,Loyal Customers,2,Cluster 2
+846,1,18653,849005.41,3,5,5,355,Loyal Customers,2,Cluster 2
+847,1,11900,702708.47,3,4,5,345,Loyal Customers,2,Cluster 2
+848,2,6277,510929.41,1,2,4,124,Lost Customers,0,Cluster 0
+849,1,8753,275137.35,3,3,1,331,Loyal Customers,0,Cluster 0
+850,1,7020,268781.92,3,2,1,321,Recent / New Customers,0,Cluster 0
+851,2,6780,315660.8,1,2,2,122,Lost Customers,0,Cluster 0
+852,1,18500,860842.65,3,5,5,355,Loyal Customers,2,Cluster 2
+855,1,9542,211546.77,3,3,1,331,Loyal Customers,0,Cluster 0
+856,1,12318,1166026.44,3,4,5,345,Loyal Customers,2,Cluster 2
+858,1,13434,706232.81,3,5,5,355,Loyal Customers,2,Cluster 2
+859,1,10051,437715.25,3,3,3,333,Loyal Customers,2,Cluster 2
+860,1,15478,893763.8,3,5,5,355,Loyal Customers,2,Cluster 2
+862,1,7297,256503.71,3,2,1,321,Recent / New Customers,0,Cluster 0
+863,1,4110,177869.26,3,1,1,311,Recent / New Customers,0,Cluster 0
+865,1,11575,779471.96,3,4,5,345,Loyal Customers,2,Cluster 2
+866,1,9672,514237.98,3,3,4,334,Loyal Customers,2,Cluster 2
+868,1,10134,664937.92,3,3,4,334,Loyal Customers,2,Cluster 2
+869,1,6150,277733.11,3,1,1,311,Recent / New Customers,0,Cluster 0
+870,1,11215,533788.24,3,4,4,344,Loyal Customers,2,Cluster 2
+871,1,16798,578653.67,3,5,4,354,Loyal Customers,2,Cluster 2
+872,1,14988,609051.66,3,5,4,354,Loyal Customers,2,Cluster 2
+875,1,3214,189689.21,3,1,1,311,Recent / New Customers,0,Cluster 0
+876,2,7337,411838.36,1,2,3,123,Lost Customers,0,Cluster 0
+877,1,8332,593421.44,3,3,4,334,Loyal Customers,2,Cluster 2
+879,1,10211,367152.55,3,3,2,332,Loyal Customers,2,Cluster 2
+882,1,7329,321122.13,3,2,2,322,Recent / New Customers,0,Cluster 0
+883,1,2290,192035.54,3,1,1,311,Recent / New Customers,0,Cluster 0
+884,1,13817,552419.16,3,5,4,354,Loyal Customers,2,Cluster 2
+885,1,10977,174860.76,3,4,1,341,Loyal Customers,0,Cluster 0
+888,3,4304,310056.4,1,1,2,112,Lost Customers,0,Cluster 0
+890,1,7856,405265.11,3,2,3,323,Recent / New Customers,0,Cluster 0
+891,1,13151,457231.47,3,4,3,343,Loyal Customers,2,Cluster 2
+895,1,8037,393509.55,3,2,3,323,Recent / New Customers,0,Cluster 0
+897,1,2421,66464.77,3,1,1,311,Recent / New Customers,0,Cluster 0
+898,1,7337,237125.63,3,2,1,321,Recent / New Customers,0,Cluster 0
+900,1,7640,348923.07,3,2,2,322,Recent / New Customers,0,Cluster 0
+901,1,7264,289697.89,3,2,2,322,Recent / New Customers,0,Cluster 0
+905,1,10930,842454.41,3,4,5,345,Loyal Customers,2,Cluster 2
+906,1,8269,420801.47,3,3,3,333,Loyal Customers,0,Cluster 0
+908,1,8671,408064.8,3,3,3,333,Loyal Customers,0,Cluster 0
+912,1,11340,381838.1,3,4,3,343,Loyal Customers,2,Cluster 2
+913,1,3709,180643.29,3,1,1,311,Recent / New Customers,0,Cluster 0
+914,1,11187,620532.77,3,4,4,344,Loyal Customers,2,Cluster 2
+917,2,5616,267669.76,1,1,1,111,Lost Customers,0,Cluster 0
+918,1,8331,382516.18,3,3,3,333,Loyal Customers,0,Cluster 0
+920,1,6063,168380.36,3,1,1,311,Recent / New Customers,0,Cluster 0
+921,1,15046,985559.53,3,5,5,355,Loyal Customers,2,Cluster 2
+924,885,5688,276265.51,1,1,1,111,Lost Customers,1,Cluster 1
+928,1,6849,310016.99,3,2,2,322,Recent / New Customers,0,Cluster 0
+931,1,7441,457993.16,3,2,3,323,Recent / New Customers,0,Cluster 0
+932,1,13403,675607.44,3,5,4,354,Loyal Customers,2,Cluster 2
+933,1,7943,303115.84,3,2,2,322,Recent / New Customers,0,Cluster 0
+938,1,10194,577830.76,3,3,4,334,Loyal Customers,2,Cluster 2
+939,1,5232,342315.67,3,1,2,312,Recent / New Customers,0,Cluster 0
+940,1,10488,431144.25,3,4,3,343,Loyal Customers,2,Cluster 2
+942,2,11527,714783.24,1,4,5,145,At-Risk / High Spenders At Risk,2,Cluster 2
+944,1,10155,1129041.24,3,3,5,335,Loyal Customers,2,Cluster 2
+946,1,12009,365015.48,3,4,2,342,Loyal Customers,2,Cluster 2
+947,1,14146,741007.63,3,5,5,355,Loyal Customers,2,Cluster 2
+948,1,7508,316257.86,3,2,2,322,Recent / New Customers,0,Cluster 0
+949,1,9578,629955.05,3,3,4,334,Loyal Customers,2,Cluster 2
+951,1,11793,319770.69,3,4,2,342,Loyal Customers,2,Cluster 2
+952,1,8458,863895.79,3,3,5,335,Loyal Customers,2,Cluster 2
+954,1,19705,949444.86,3,5,5,355,Loyal Customers,2,Cluster 2
+955,1,1937,68484.49,3,1,1,311,Recent / New Customers,0,Cluster 0
+957,1,10002,631137.46,3,3,4,334,Loyal Customers,2,Cluster 2
+961,1,11744,649213.24,3,4,4,344,Loyal Customers,2,Cluster 2
+962,1,5462,277819.42,3,1,1,311,Recent / New Customers,0,Cluster 0
+963,1,3384,160074.91,3,1,1,311,Recent / New Customers,0,Cluster 0
+964,1,7073,314758.67,3,2,2,322,Recent / New Customers,0,Cluster 0
+970,1,12413,458588.89,3,4,3,343,Loyal Customers,2,Cluster 2
+972,1,11491,776672.89,3,4,5,345,Loyal Customers,2,Cluster 2
+973,1,16633,361236.7,3,5,2,352,Loyal Customers,2,Cluster 2
+976,1,14666,859746.63,3,5,5,355,Loyal Customers,2,Cluster 2
+977,2,10539,343256.3,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+979,1,5262,387345.29,3,1,3,313,Recent / New Customers,0,Cluster 0
+980,1,6509,263156.28,3,2,1,321,Recent / New Customers,0,Cluster 0
+983,1,8368,405544.26,3,3,3,333,Loyal Customers,0,Cluster 0
+984,1,12216,774823.02,3,4,5,345,Loyal Customers,2,Cluster 2
+985,1,10691,1026645.64,3,4,5,345,Loyal Customers,2,Cluster 2
+986,1,10941,335126.93,3,4,2,342,Loyal Customers,2,Cluster 2
+987,1,27830,1065511.51,3,5,5,355,Loyal Customers,2,Cluster 2
+988,1,6990,431066.01,3,2,3,323,Recent / New Customers,0,Cluster 0
+990,2,6114,258172.6,1,1,1,111,Lost Customers,0,Cluster 0
+992,1,8471,590045.67,3,3,4,334,Loyal Customers,2,Cluster 2
+994,1,7705,231607.9,3,2,1,321,Recent / New Customers,0,Cluster 0
+996,1,15573,724131.93,3,5,5,355,Loyal Customers,2,Cluster 2
+997,1,30082,984997.5,3,5,5,355,Loyal Customers,2,Cluster 2
+1002,36,3391,239532.1,1,1,1,111,Lost Customers,0,Cluster 0
+1003,1,10606,1039214.67,3,4,5,345,Loyal Customers,2,Cluster 2
+1006,1,10173,473491.23,3,3,3,333,Loyal Customers,2,Cluster 2
+1008,1,15979,351539.53,3,5,2,352,Loyal Customers,2,Cluster 2
+1009,1,6252,195171.11,3,2,1,321,Recent / New Customers,0,Cluster 0
+1012,1,2981,174995.78,3,1,1,311,Recent / New Customers,0,Cluster 0
+1016,2,2166,53195.75,1,1,1,111,Lost Customers,0,Cluster 0
+1018,1,15911,802770.59,3,5,5,355,Loyal Customers,2,Cluster 2
+1019,1,8549,463886.69,3,3,3,333,Loyal Customers,2,Cluster 2
+1020,1,16288,833610.08,3,5,5,355,Loyal Customers,2,Cluster 2
+1022,1,10280,705127.36,3,3,5,335,Loyal Customers,2,Cluster 2
+1024,1,15501,419527.59,3,5,3,353,Loyal Customers,2,Cluster 2
+1026,1,10585,365721.68,3,4,2,342,Loyal Customers,2,Cluster 2
+1027,1,7454,630422.71,3,2,4,324,Recent / New Customers,2,Cluster 2
+1028,1,12422,951445.37,3,4,5,345,Loyal Customers,2,Cluster 2
+1029,1,5297,366527.78,3,1,2,312,Recent / New Customers,0,Cluster 0
+1030,1,9806,335446.19,3,3,2,332,Loyal Customers,0,Cluster 0
+1031,1,7437,459600.83,3,2,3,323,Recent / New Customers,0,Cluster 0
+1034,1,12623,847841.11,3,4,5,345,Loyal Customers,2,Cluster 2
+1039,1,15148,596591.03,3,5,4,354,Loyal Customers,2,Cluster 2
+1041,1,7973,396984.41,3,2,3,323,Recent / New Customers,0,Cluster 0
+1046,1,13360,712983.97,3,5,5,355,Loyal Customers,2,Cluster 2
+1047,1,8875,545452.38,3,3,4,334,Loyal Customers,2,Cluster 2
+1048,1,7327,446472.08,3,2,3,323,Recent / New Customers,0,Cluster 0
+1050,1,18047,780916.25,3,5,5,355,Loyal Customers,2,Cluster 2
+1052,1,11197,928889.02,3,4,5,345,Loyal Customers,2,Cluster 2
+1053,1,12404,899177.49,3,4,5,345,Loyal Customers,2,Cluster 2
+1054,2,6983,307842.39,1,2,2,122,Lost Customers,0,Cluster 0
+1058,1,13357,636266.61,3,5,4,354,Loyal Customers,2,Cluster 2
+1060,1,6623,370337.36,3,2,2,322,Recent / New Customers,0,Cluster 0
+1063,1,16376,723882.07,3,5,5,355,Loyal Customers,2,Cluster 2
+1067,1,13558,462824.0,3,5,3,353,Loyal Customers,2,Cluster 2
+1069,1,11662,456972.08,3,4,3,343,Loyal Customers,2,Cluster 2
+1070,1,8269,440684.64,3,3,3,333,Loyal Customers,2,Cluster 2
+1072,2,11060,508610.88,1,4,4,144,At-Risk / High Spenders At Risk,2,Cluster 2
+1073,1,9603,466317.19,3,3,3,333,Loyal Customers,2,Cluster 2
+1074,1,4912,290164.74,3,1,2,312,Recent / New Customers,0,Cluster 0
+1075,1,19680,745803.49,3,5,5,355,Loyal Customers,2,Cluster 2
+1076,2,6656,344938.61,1,2,2,122,Lost Customers,0,Cluster 0
+1077,1,21664,564110.16,3,5,4,354,Loyal Customers,2,Cluster 2
+1078,1,11210,722235.14,3,4,5,345,Loyal Customers,2,Cluster 2
+1079,1,13121,907188.09,3,4,5,345,Loyal Customers,2,Cluster 2
+1080,1,11870,361503.48,3,4,2,342,Loyal Customers,2,Cluster 2
+1081,1,14812,1082500.9,3,5,5,355,Loyal Customers,2,Cluster 2
+1082,1,6052,389204.49,3,1,3,313,Recent / New Customers,0,Cluster 0
+1083,1,22008,1020646.2,3,5,5,355,Loyal Customers,2,Cluster 2
+1084,1,11363,556090.58,3,4,4,344,Loyal Customers,2,Cluster 2
+1086,1,4445,444749.52,3,1,3,313,Recent / New Customers,0,Cluster 0
+1087,1,6695,250546.96,3,2,1,321,Recent / New Customers,0,Cluster 0
+1088,1,7406,400451.06,3,2,3,323,Recent / New Customers,0,Cluster 0
+1089,1,7584,461080.61,3,2,3,323,Recent / New Customers,0,Cluster 0
+1091,2,6974,463507.6,1,2,3,123,Lost Customers,0,Cluster 0
+1094,1,5077,266067.37,3,1,1,311,Recent / New Customers,0,Cluster 0
+1095,1,5331,335018.87,3,1,2,312,Recent / New Customers,0,Cluster 0
+1096,1,16933,828039.88,3,5,5,355,Loyal Customers,2,Cluster 2
+1097,1,7323,340127.76,3,2,2,322,Recent / New Customers,0,Cluster 0
+1100,1,8888,878910.61,3,3,5,335,Loyal Customers,2,Cluster 2
+1102,1,17144,1184967.42,3,5,5,355,Loyal Customers,2,Cluster 2
+1103,1,12541,555180.79,3,4,4,344,Loyal Customers,2,Cluster 2
+1104,1,13278,750695.56,3,4,5,345,Loyal Customers,2,Cluster 2
+1105,1,12842,790298.29,3,4,5,345,Loyal Customers,2,Cluster 2
+1106,1,11021,329395.36,3,4,2,342,Loyal Customers,2,Cluster 2
+1107,1,10909,487620.35,3,4,3,343,Loyal Customers,2,Cluster 2
+1114,1,8245,320796.61,3,3,2,332,Loyal Customers,0,Cluster 0
+1115,1,12226,730107.69,3,4,5,345,Loyal Customers,2,Cluster 2
+1116,1,15841,1085564.05,3,5,5,355,Loyal Customers,2,Cluster 2
+1117,1,12420,1055946.48,3,4,5,345,Loyal Customers,2,Cluster 2
+1118,1,5781,663608.8,3,1,4,314,Recent / New Customers,0,Cluster 0
+1121,1,15971,873296.07,3,5,5,355,Loyal Customers,2,Cluster 2
+1123,1,6547,215182.77,3,2,1,321,Recent / New Customers,0,Cluster 0
+1125,1,3074,215551.67,3,1,1,311,Recent / New Customers,0,Cluster 0
+1127,1,17271,613557.31,3,5,4,354,Loyal Customers,2,Cluster 2
+1128,1,7708,317140.3,3,2,2,322,Recent / New Customers,0,Cluster 0
+1129,1,13827,768172.66,3,5,5,355,Loyal Customers,2,Cluster 2
+1130,1,13186,783572.26,3,4,5,345,Loyal Customers,2,Cluster 2
+1131,1,8467,809298.04,3,3,5,335,Loyal Customers,2,Cluster 2
+1133,1,9186,346893.96,4,3,2,432,Loyal Customers,0,Cluster 0
+1135,1,15027,647381.94,4,5,4,454,Champions,2,Cluster 2
+1137,1,6533,363560.39,4,2,2,422,Recent / New Customers,0,Cluster 0
+1138,1,18355,666002.94,4,5,4,454,Champions,2,Cluster 2
+1140,1,11799,501051.25,4,4,4,444,Champions,2,Cluster 2
+1141,1,11006,375009.24,4,4,2,442,Loyal Customers,2,Cluster 2
+1142,1,7675,627725.96,4,2,4,424,Recent / New Customers,2,Cluster 2
+1144,1,20055,712111.18,4,5,5,455,Champions,2,Cluster 2
+1145,1,19320,904389.82,4,5,5,455,Champions,2,Cluster 2
+1147,1,23680,1055380.95,4,5,5,455,Champions,2,Cluster 2
+1148,2,8074,391588.54,1,2,3,123,Lost Customers,0,Cluster 0
+1150,1,15255,707978.7,4,5,5,455,Champions,2,Cluster 2
+1151,2,6279,89818.72,1,2,1,121,Lost Customers,0,Cluster 0
+1153,1,4335,93910.82,4,1,1,411,Recent / New Customers,0,Cluster 0
+1155,1,12651,661135.87,4,4,4,444,Champions,2,Cluster 2
+1156,1,12430,1154161.58,4,4,5,445,Champions,2,Cluster 2
+1163,1,4460,383480.41,4,1,3,413,Recent / New Customers,0,Cluster 0
+1164,1,9089,924687.67,4,3,5,435,Loyal Customers,2,Cluster 2
+1166,1,14593,667478.5,4,5,4,454,Champions,2,Cluster 2
+1170,1,8821,421348.75,4,3,3,433,Loyal Customers,2,Cluster 2
+1171,1,6115,516017.8,4,1,4,414,Recent / New Customers,0,Cluster 0
+1173,2,8228,491393.04,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+1176,1,16430,749071.48,4,5,5,455,Champions,2,Cluster 2
+1177,1,10530,428010.0,4,4,3,443,Loyal Customers,2,Cluster 2
+1179,1,5444,370694.58,4,1,2,412,Recent / New Customers,0,Cluster 0
+1180,1,10018,586248.84,4,3,4,434,Loyal Customers,2,Cluster 2
+1181,1,8324,480603.13,4,3,3,433,Loyal Customers,2,Cluster 2
+1183,1,7245,348167.78,4,2,2,422,Recent / New Customers,0,Cluster 0
+1184,1,9668,500619.65,4,3,4,434,Loyal Customers,2,Cluster 2
+1187,1,3741,216871.52,4,1,1,411,Recent / New Customers,0,Cluster 0
+1189,1,7163,319293.83,4,2,2,422,Recent / New Customers,0,Cluster 0
+1190,1,21276,832055.9,4,5,5,455,Champions,2,Cluster 2
+1192,1,7111,171459.16,4,2,1,421,Recent / New Customers,0,Cluster 0
+1193,1,12771,468175.02,4,4,3,443,Loyal Customers,2,Cluster 2
+1194,1,14123,546840.09,4,5,4,454,Champions,2,Cluster 2
+1195,1,12397,665740.25,4,4,4,444,Champions,2,Cluster 2
+1196,1,8333,493568.31,4,3,4,434,Loyal Customers,2,Cluster 2
+1198,1,16457,681777.48,4,5,4,454,Champions,2,Cluster 2
+1201,1,6448,707862.25,4,2,5,425,Recent / New Customers,2,Cluster 2
+1202,1,10098,118498.61,4,3,1,431,Loyal Customers,0,Cluster 0
+1203,1,3985,159763.2,4,1,1,411,Recent / New Customers,0,Cluster 0
+1204,1,6119,409651.59,4,1,3,413,Recent / New Customers,0,Cluster 0
+1207,1,15706,840990.69,4,5,5,455,Champions,2,Cluster 2
+1208,1,10157,361384.33,4,3,2,432,Loyal Customers,2,Cluster 2
+1209,1,17403,1103194.95,4,5,5,455,Champions,2,Cluster 2
+1210,1,8664,376061.92,4,3,2,432,Loyal Customers,0,Cluster 0
+1211,1,6110,372828.35,4,1,2,412,Recent / New Customers,0,Cluster 0
+1213,1,6725,312400.56,4,2,2,422,Recent / New Customers,0,Cluster 0
+1214,1,11293,627966.61,4,4,4,444,Champions,2,Cluster 2
+1217,1,6705,533809.04,4,2,4,424,Recent / New Customers,0,Cluster 0
+1219,1,9716,720227.37,4,3,5,435,Loyal Customers,2,Cluster 2
+1221,1,9533,390956.47,4,3,3,433,Loyal Customers,2,Cluster 2
+1222,1,12420,461320.09,4,4,3,443,Loyal Customers,2,Cluster 2
+1223,1,695,123716.55,4,1,1,411,Recent / New Customers,0,Cluster 0
+1224,1,17977,845663.26,4,5,5,455,Champions,2,Cluster 2
+1225,1,14065,645764.5,4,5,4,454,Champions,2,Cluster 2
+1226,1,9287,632428.86,4,3,4,434,Loyal Customers,2,Cluster 2
+1227,1,11550,446928.73,4,4,3,443,Loyal Customers,2,Cluster 2
+1228,1,11685,447730.39,4,4,3,443,Loyal Customers,2,Cluster 2
+1229,1,8101,582901.18,4,2,4,424,Recent / New Customers,2,Cluster 2
+1234,1,13026,234519.47,4,4,1,441,Loyal Customers,0,Cluster 0
+1236,1,10702,306418.65,4,4,2,442,Loyal Customers,0,Cluster 0
+1237,1,23455,692589.5,4,5,5,455,Champions,2,Cluster 2
+1238,1,10344,1166239.18,4,4,5,445,Champions,2,Cluster 2
+1239,1,10586,412231.61,4,4,3,443,Loyal Customers,2,Cluster 2
+1240,1,9081,367362.05,4,3,2,432,Loyal Customers,0,Cluster 0
+1241,1,13681,1183302.12,4,5,5,455,Champions,2,Cluster 2
+1242,1,8428,373484.97,4,3,2,432,Loyal Customers,0,Cluster 0
+1243,1,8471,681512.84,4,3,4,434,Loyal Customers,2,Cluster 2
+1245,1,10755,398536.27,4,4,3,443,Loyal Customers,2,Cluster 2
+1246,1,7694,353723.54,4,2,2,422,Recent / New Customers,0,Cluster 0
+1247,1,9187,520173.43,4,3,4,434,Loyal Customers,2,Cluster 2
+1248,1,8590,373940.5,4,3,2,432,Loyal Customers,0,Cluster 0
+1250,1,12836,390155.32,4,4,3,443,Loyal Customers,2,Cluster 2
+1251,1,10829,355679.68,4,4,2,442,Loyal Customers,2,Cluster 2
+1253,1,19250,1175587.9,4,5,5,455,Champions,2,Cluster 2
+1254,1,7338,244511.83,4,2,1,421,Recent / New Customers,0,Cluster 0
+1256,1,18120,668802.74,4,5,4,454,Champions,2,Cluster 2
+1257,2,5437,256951.74,1,1,1,111,Lost Customers,0,Cluster 0
+1258,1,11432,434133.77,4,4,3,443,Loyal Customers,2,Cluster 2
+1259,1,10950,1046526.92,4,4,5,445,Champions,2,Cluster 2
+1260,1,3979,140291.64,4,1,1,411,Recent / New Customers,0,Cluster 0
+1261,1,7568,489165.64,4,2,3,423,Recent / New Customers,2,Cluster 2
+1262,1,10707,219187.72,4,4,1,441,Loyal Customers,0,Cluster 0
+1263,1,7201,354442.64,4,2,2,422,Recent / New Customers,0,Cluster 0
+1266,1,6588,318826.4,4,2,2,422,Recent / New Customers,0,Cluster 0
+1267,1,5259,416278.23,4,1,3,413,Recent / New Customers,0,Cluster 0
+1268,1,4097,227037.93,4,1,1,411,Recent / New Customers,0,Cluster 0
+1269,1,13492,660637.76,4,5,4,454,Champions,2,Cluster 2
+1274,1,15536,965100.18,4,5,5,455,Champions,2,Cluster 2
+1276,2,5307,497404.66,1,1,4,114,Lost Customers,0,Cluster 0
+1279,1,14623,585505.31,4,5,4,454,Champions,2,Cluster 2
+1281,2,4471,179639.47,1,1,1,111,Lost Customers,0,Cluster 0
+1282,1,7349,339042.4,4,2,2,422,Recent / New Customers,0,Cluster 0
+1283,1,9802,659730.56,4,3,4,434,Loyal Customers,2,Cluster 2
+1284,1,7221,496212.57,4,2,4,424,Recent / New Customers,0,Cluster 0
+1285,1,9944,798451.75,4,3,5,435,Loyal Customers,2,Cluster 2
+1286,1,13699,757129.5,4,5,5,455,Champions,2,Cluster 2
+1288,1,10890,537752.68,4,4,4,444,Champions,2,Cluster 2
+1289,671,2445,31753.34,1,1,1,111,Lost Customers,1,Cluster 1
+1291,1,6686,471978.13,4,2,3,423,Recent / New Customers,0,Cluster 0
+1293,1,17202,980330.27,4,5,5,455,Champions,2,Cluster 2
+1294,1,9616,694412.81,4,3,5,435,Loyal Customers,2,Cluster 2
+1295,1,20175,777175.02,4,5,5,455,Champions,2,Cluster 2
+1296,1,21340,606056.19,4,5,4,454,Champions,2,Cluster 2
+1298,1,6156,217849.9,4,1,1,411,Recent / New Customers,0,Cluster 0
+1299,2,6352,300859.04,1,2,2,122,Lost Customers,0,Cluster 0
+1300,1,13037,334870.82,4,4,2,442,Loyal Customers,2,Cluster 2
+1301,1,8241,350454.71,4,3,2,432,Loyal Customers,0,Cluster 0
+1302,1,10065,591074.05,4,3,4,434,Loyal Customers,2,Cluster 2
+1303,6,3740,363679.33,1,1,2,112,Lost Customers,0,Cluster 0
+1305,1,8596,393114.91,4,3,3,433,Loyal Customers,0,Cluster 0
+1307,1,9112,837756.75,4,3,5,435,Loyal Customers,2,Cluster 2
+1313,1,14655,561171.1,4,5,4,454,Champions,2,Cluster 2
+1314,1,17391,749170.38,4,5,5,455,Champions,2,Cluster 2
+1315,1,12456,308662.19,4,4,2,442,Loyal Customers,2,Cluster 2
+1317,1,7243,215258.92,4,2,1,421,Recent / New Customers,0,Cluster 0
+1323,1,10450,559761.78,4,4,4,444,Champions,2,Cluster 2
+1324,1,8543,606410.95,4,3,4,434,Loyal Customers,2,Cluster 2
+1326,1,8269,546116.43,4,3,4,434,Loyal Customers,2,Cluster 2
+1330,1,19458,873380.45,4,5,5,455,Champions,2,Cluster 2
+1331,1,7359,41149.45,4,2,1,421,Recent / New Customers,0,Cluster 0
+1332,1,7401,397787.09,4,2,3,423,Recent / New Customers,0,Cluster 0
+1334,1,7185,275115.97,4,2,1,421,Recent / New Customers,0,Cluster 0
+1335,1,8239,606303.59,4,3,4,434,Loyal Customers,2,Cluster 2
+1341,1,13321,521619.19,4,4,4,444,Champions,2,Cluster 2
+1344,1,12319,538809.72,4,4,4,444,Champions,2,Cluster 2
+1345,1,10997,536829.05,4,4,4,444,Champions,2,Cluster 2
+1347,1,5878,349168.75,4,1,2,412,Recent / New Customers,0,Cluster 0
+1348,1,10382,83434.84,4,4,1,441,Loyal Customers,0,Cluster 0
+1352,1,5167,286005.47,4,1,2,412,Recent / New Customers,0,Cluster 0
+1353,2,5611,320874.36,1,1,2,112,Lost Customers,0,Cluster 0
+1356,1,9394,387237.81,4,3,3,433,Loyal Customers,2,Cluster 2
+1357,1,14329,372998.31,4,5,2,452,Loyal Customers,2,Cluster 2
+1358,1,5196,114747.22,4,1,1,411,Recent / New Customers,0,Cluster 0
+1360,1,4313,216909.74,4,1,1,411,Recent / New Customers,0,Cluster 0
+1361,1,7804,338476.03,4,2,2,422,Recent / New Customers,0,Cluster 0
+1362,1,7024,460676.87,4,2,3,423,Recent / New Customers,0,Cluster 0
+1364,3,3466,77622.15,1,1,1,111,Lost Customers,0,Cluster 0
+1366,1,6649,300990.66,4,2,2,422,Recent / New Customers,0,Cluster 0
+1367,1,8667,279861.18,4,3,1,431,Loyal Customers,0,Cluster 0
+1369,1,17598,491540.65,4,5,3,453,Loyal Customers,2,Cluster 2
+1370,1,10705,628510.66,4,4,4,444,Champions,2,Cluster 2
+1371,1,10681,393289.79,4,4,3,443,Loyal Customers,2,Cluster 2
+1376,1,11773,589097.51,4,4,4,444,Champions,2,Cluster 2
+1378,1,13026,566000.05,4,4,4,444,Champions,2,Cluster 2
+1379,1,18767,715402.46,4,5,5,455,Champions,2,Cluster 2
+1381,1,15546,700078.53,4,5,5,455,Champions,2,Cluster 2
+1382,1,18368,826105.57,4,5,5,455,Champions,2,Cluster 2
+1383,1,12128,737613.59,4,4,5,445,Champions,2,Cluster 2
+1384,1,8794,507571.87,4,3,4,434,Loyal Customers,2,Cluster 2
+1385,1,13137,1037150.83,4,4,5,445,Champions,2,Cluster 2
+1391,1,21276,967579.24,4,5,5,455,Champions,2,Cluster 2
+1393,1,11155,480072.43,4,4,3,443,Loyal Customers,2,Cluster 2
+1394,1,12194,541473.07,4,4,4,444,Champions,2,Cluster 2
+1397,1,8736,372714.56,4,3,2,432,Loyal Customers,0,Cluster 0
+1398,1,17477,940940.62,4,5,5,455,Champions,2,Cluster 2
+1404,1,4722,252158.45,4,1,1,411,Recent / New Customers,0,Cluster 0
+1405,1,11095,658520.66,4,4,4,444,Champions,2,Cluster 2
+1406,2,7119,174651.5,1,2,1,121,Lost Customers,0,Cluster 0
+1407,1,21924,919647.0,4,5,5,455,Champions,2,Cluster 2
+1411,1,11923,667011.55,4,4,4,444,Champions,2,Cluster 2
+1412,1,13474,809027.2,4,5,5,455,Champions,2,Cluster 2
+1413,1,11958,375077.9,4,4,2,442,Loyal Customers,2,Cluster 2
+1416,1,9943,690320.7,4,3,5,435,Loyal Customers,2,Cluster 2
+1417,1,7209,510319.02,4,2,4,424,Recent / New Customers,0,Cluster 0
+1421,1,3234,218342.3,4,1,1,411,Recent / New Customers,0,Cluster 0
+1422,1,9669,398777.92,4,3,3,433,Loyal Customers,2,Cluster 2
+1424,1,11842,562407.51,4,4,4,444,Champions,2,Cluster 2
+1425,1,12131,475320.83,4,4,3,443,Loyal Customers,2,Cluster 2
+1427,1,8096,635160.46,4,2,4,424,Recent / New Customers,2,Cluster 2
+1428,1,15455,131521.02,4,5,1,451,Loyal Customers,0,Cluster 0
+1429,1,7587,304475.13,4,2,2,422,Recent / New Customers,0,Cluster 0
+1430,1,6406,495407.94,4,2,4,424,Recent / New Customers,0,Cluster 0
+1432,1,13788,613167.39,4,5,4,454,Champions,2,Cluster 2
+1433,1,15200,666433.21,4,5,4,454,Champions,2,Cluster 2
+1434,1,3786,220434.11,4,1,1,411,Recent / New Customers,0,Cluster 0
+1435,1,17564,829015.61,4,5,5,455,Champions,2,Cluster 2
+1437,1,17232,409250.5,4,5,3,453,Loyal Customers,2,Cluster 2
+1439,1,9425,171369.4,4,3,1,431,Loyal Customers,0,Cluster 0
+1442,1,12526,653113.68,4,4,4,444,Champions,2,Cluster 2
+1443,1,12963,674593.32,4,4,4,444,Champions,2,Cluster 2
+1444,1,11718,1004232.9,4,4,5,445,Champions,2,Cluster 2
+1445,1,13374,321141.24,4,5,2,452,Loyal Customers,2,Cluster 2
+1446,1,5571,228552.05,4,1,1,411,Recent / New Customers,0,Cluster 0
+1448,1,17588,715730.74,4,5,5,455,Champions,2,Cluster 2
+1449,1,9313,352574.7,4,3,2,432,Loyal Customers,0,Cluster 0
+1451,1,20644,1060819.78,4,5,5,455,Champions,2,Cluster 2
+1453,1,18657,556238.33,4,5,4,454,Champions,2,Cluster 2
+1455,1,8207,246502.64,4,3,1,431,Loyal Customers,0,Cluster 0
+1456,1,11822,768044.72,4,4,5,445,Champions,2,Cluster 2
+1458,1,5362,293112.11,4,1,2,412,Recent / New Customers,0,Cluster 0
+1459,1,17771,635540.83,4,5,4,454,Champions,2,Cluster 2
+1461,1,12091,352385.46,4,4,2,442,Loyal Customers,2,Cluster 2
+1463,1,18954,637373.64,4,5,4,454,Champions,2,Cluster 2
+1464,1,9708,736657.23,4,3,5,435,Loyal Customers,2,Cluster 2
+1466,1,14753,459447.1,4,5,3,453,Loyal Customers,2,Cluster 2
+1467,2,9364,440231.25,1,3,3,133,At-Risk / High Spenders At Risk,2,Cluster 2
+1470,3,6252,239782.2,1,2,1,121,Lost Customers,0,Cluster 0
+1471,1,7290,338167.33,4,2,2,422,Recent / New Customers,0,Cluster 0
+1473,1,6432,300095.03,4,2,2,422,Recent / New Customers,0,Cluster 0
+1475,1,19210,591151.35,4,5,4,454,Champions,2,Cluster 2
+1477,1,7058,365600.26,4,2,2,422,Recent / New Customers,0,Cluster 0
+1478,1,8664,478210.25,4,3,3,433,Loyal Customers,2,Cluster 2
+1479,2,5689,250499.76,1,1,1,111,Lost Customers,0,Cluster 0
+1482,1,10381,701211.08,4,4,5,445,Champions,2,Cluster 2
+1484,1,15190,644335.63,4,5,4,454,Champions,2,Cluster 2
+1485,1,12098,492768.12,4,4,4,444,Champions,2,Cluster 2
+1486,1,5824,169005.21,4,1,1,411,Recent / New Customers,0,Cluster 0
+1487,1,12743,1180349.92,4,4,5,445,Champions,2,Cluster 2
+1488,1,9165,340069.98,4,3,2,432,Loyal Customers,0,Cluster 0
+1490,1,9449,413985.73,4,3,3,433,Loyal Customers,2,Cluster 2
+1492,1,11814,531272.36,4,4,4,444,Champions,2,Cluster 2
+1493,1,6903,671082.86,4,2,4,424,Recent / New Customers,2,Cluster 2
+1494,1,3648,111169.16,4,1,1,411,Recent / New Customers,0,Cluster 0
+1495,1,11620,713634.37,4,4,5,445,Champions,2,Cluster 2
+1497,1,9367,456796.15,4,3,3,433,Loyal Customers,2,Cluster 2
+1498,1,9282,613616.15,4,3,4,434,Loyal Customers,2,Cluster 2
+1499,1,3023,179510.99,4,1,1,411,Recent / New Customers,0,Cluster 0
+1500,1,10950,476022.07,4,4,3,443,Loyal Customers,2,Cluster 2
+1503,2,6145,291664.91,1,1,2,112,Lost Customers,0,Cluster 0
+1504,1,7640,359969.01,4,2,2,422,Recent / New Customers,0,Cluster 0
+1507,1,6195,241462.71,4,2,1,421,Recent / New Customers,0,Cluster 0
+1508,1,6496,206930.0,4,2,1,421,Recent / New Customers,0,Cluster 0
+1509,1,12597,357615.64,4,4,2,442,Loyal Customers,2,Cluster 2
+1510,2253,1768,163544.84,1,1,1,111,Lost Customers,1,Cluster 1
+1511,1,11448,468140.04,4,4,3,443,Loyal Customers,2,Cluster 2
+1512,1,10977,470271.28,4,4,3,443,Loyal Customers,2,Cluster 2
+1513,1,12988,733235.29,4,4,5,445,Champions,2,Cluster 2
+1514,1,5771,342091.59,4,1,2,412,Recent / New Customers,0,Cluster 0
+1515,2,8252,447416.64,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+1516,1,14686,623883.34,4,5,4,454,Champions,2,Cluster 2
+1517,1,9598,567765.56,4,3,4,434,Loyal Customers,2,Cluster 2
+1518,1,7360,357440.5,4,2,2,422,Recent / New Customers,0,Cluster 0
+1519,2,11525,346220.47,1,4,2,142,At-Risk / High Spenders At Risk,2,Cluster 2
+1520,1,13965,821756.79,4,5,5,455,Champions,2,Cluster 2
+1521,1,5301,268015.92,4,1,1,411,Recent / New Customers,0,Cluster 0
+1523,2,8028,230790.27,1,2,1,121,Lost Customers,0,Cluster 0
+1525,1,9670,362724.98,4,3,2,432,Loyal Customers,0,Cluster 0
+1526,1,5818,307278.09,4,1,2,412,Recent / New Customers,0,Cluster 0
+1527,1,2235,135511.25,4,1,1,411,Recent / New Customers,0,Cluster 0
+1529,1,17541,688762.18,4,5,5,455,Champions,2,Cluster 2
+1530,3,3991,97307.83,1,1,1,111,Lost Customers,0,Cluster 0
+1531,2,7140,227218.16,1,2,1,121,Lost Customers,0,Cluster 0
+1533,1,8519,641268.62,4,3,4,434,Loyal Customers,2,Cluster 2
+1534,1,19324,1125356.29,4,5,5,455,Champions,2,Cluster 2
+1535,2,8815,393964.54,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+1538,1,12080,504363.82,4,4,4,444,Champions,2,Cluster 2
+1540,1,21747,862088.69,4,5,5,455,Champions,2,Cluster 2
+1541,1,18190,530019.64,4,5,4,454,Champions,2,Cluster 2
+1542,1,5693,213443.86,4,1,1,411,Recent / New Customers,0,Cluster 0
+1544,1,8092,493164.46,4,2,4,424,Recent / New Customers,2,Cluster 2
+1546,1,6949,360229.13,4,2,2,422,Recent / New Customers,0,Cluster 0
+1549,1,5518,435154.76,4,1,3,413,Recent / New Customers,0,Cluster 0
+1551,1,13767,1010859.3,4,5,5,455,Champions,2,Cluster 2
+1552,1,6666,604479.91,4,2,4,424,Recent / New Customers,2,Cluster 2
+1555,1,2190,123645.94,4,1,1,411,Recent / New Customers,0,Cluster 0
+1556,1,4553,290736.36,4,1,2,412,Recent / New Customers,0,Cluster 0
+1557,1,4417,244980.28,5,1,1,511,Recent / New Customers,0,Cluster 0
+1558,1,13273,904564.39,5,4,5,545,Champions,2,Cluster 2
+1559,1,27619,1109980.97,5,5,5,555,Champions,2,Cluster 2
+1560,4,4998,307729.58,1,1,2,112,Lost Customers,0,Cluster 0
+1561,1,8246,589185.38,5,3,4,534,Loyal Customers,2,Cluster 2
+1562,1,6377,266197.38,5,2,1,521,Recent / New Customers,0,Cluster 0
+1563,1,13497,447086.91,5,5,3,553,Loyal Customers,2,Cluster 2
+1564,1,7630,301026.58,5,2,2,522,Recent / New Customers,0,Cluster 0
+1567,1,9023,610459.63,5,3,4,534,Loyal Customers,2,Cluster 2
+1568,2,9058,580360.85,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+1569,1,8165,409712.34,5,2,3,523,Recent / New Customers,0,Cluster 0
+1571,1,5852,463797.31,5,1,3,513,Recent / New Customers,0,Cluster 0
+1576,1,13072,595334.21,5,4,4,544,Champions,2,Cluster 2
+1577,2,4771,278173.34,1,1,1,111,Lost Customers,0,Cluster 0
+1579,1,8715,327038.64,5,3,2,532,Loyal Customers,0,Cluster 0
+1581,1,18773,400420.11,5,5,3,553,Loyal Customers,2,Cluster 2
+1582,1,4110,263083.96,5,1,1,511,Recent / New Customers,0,Cluster 0
+1583,1,6614,147947.59,5,2,1,521,Recent / New Customers,0,Cluster 0
+1584,1,4370,255191.98,5,1,1,511,Recent / New Customers,0,Cluster 0
+1585,1,11289,455384.13,5,4,3,543,Loyal Customers,2,Cluster 2
+1586,1,10561,662124.7,5,4,4,544,Champions,2,Cluster 2
+1587,1,11248,1157502.95,5,4,5,545,Champions,2,Cluster 2
+1589,1,2878,145955.23,5,1,1,511,Recent / New Customers,0,Cluster 0
+1591,1,21305,685332.95,5,5,5,555,Champions,2,Cluster 2
+1594,1,6310,205253.72,5,2,1,521,Recent / New Customers,0,Cluster 0
+1596,1,12470,737802.2,5,4,5,545,Champions,2,Cluster 2
+1598,1,4309,191548.9,5,1,1,511,Recent / New Customers,0,Cluster 0
+1600,1,10170,612142.46,5,3,4,534,Loyal Customers,2,Cluster 2
+1602,3,3613,219123.35,1,1,1,111,Lost Customers,0,Cluster 0
+1603,1,9512,377933.94,5,3,3,533,Loyal Customers,2,Cluster 2
+1604,1,20723,671287.8,5,5,4,554,Champions,2,Cluster 2
+1605,1,8423,445447.35,5,3,3,533,Loyal Customers,2,Cluster 2
+1606,2,4674,443342.71,1,1,3,113,Lost Customers,0,Cluster 0
+1609,1,7531,495267.61,5,2,4,524,Recent / New Customers,2,Cluster 2
+1610,1,12268,342430.54,5,4,2,542,Loyal Customers,2,Cluster 2
+1613,1,9815,607015.98,5,3,4,534,Loyal Customers,2,Cluster 2
+1615,1,6428,362128.93,5,2,2,522,Recent / New Customers,0,Cluster 0
+1616,1,10977,758288.56,5,4,5,545,Champions,2,Cluster 2
+1617,2223,2943,166930.16,1,1,1,111,Lost Customers,1,Cluster 1
+1618,1,11002,531442.65,5,4,4,544,Champions,2,Cluster 2
+1619,1,5662,227508.82,5,1,1,511,Recent / New Customers,0,Cluster 0
+1621,1,10087,482943.28,5,3,3,533,Loyal Customers,2,Cluster 2
+1622,1,10169,639364.11,5,3,4,534,Loyal Customers,2,Cluster 2
+1623,1,7917,313934.2,5,2,2,522,Recent / New Customers,0,Cluster 0
+1626,1,12552,790187.61,5,4,5,545,Champions,2,Cluster 2
+1629,1,14748,467979.61,5,5,3,553,Loyal Customers,2,Cluster 2
+1633,1,8897,335664.48,5,3,2,532,Loyal Customers,0,Cluster 0
+1634,1,11786,198019.42,5,4,1,541,Loyal Customers,0,Cluster 0
+1635,1,9989,342812.66,5,3,2,532,Loyal Customers,0,Cluster 0
+1636,1,7677,261860.82,5,2,1,521,Recent / New Customers,0,Cluster 0
+1638,1,13228,599076.57,5,4,4,544,Champions,2,Cluster 2
+1639,1,11537,1063642.78,5,4,5,545,Champions,2,Cluster 2
+1640,1,4015,290431.29,5,1,2,512,Recent / New Customers,0,Cluster 0
+1642,1,11578,374834.79,5,4,2,542,Loyal Customers,2,Cluster 2
+1644,1,12999,493285.68,5,4,4,544,Champions,2,Cluster 2
+1645,1,8639,417498.74,5,3,3,533,Loyal Customers,0,Cluster 0
+1646,1,9720,239157.96,5,3,1,531,Loyal Customers,0,Cluster 0
+1649,3,2333,81851.8,1,1,1,111,Lost Customers,0,Cluster 0
+1652,1,7161,310270.24,5,2,2,522,Recent / New Customers,0,Cluster 0
+1656,1,2812,101987.85,5,1,1,511,Recent / New Customers,0,Cluster 0
+1659,1,27877,1068992.0,5,5,5,555,Champions,2,Cluster 2
+1660,1,7553,240231.66,5,2,1,521,Recent / New Customers,0,Cluster 0
+1662,1,15202,1026313.6,5,5,5,555,Champions,2,Cluster 2
+1664,1,17651,499535.63,5,5,4,554,Champions,2,Cluster 2
+1666,1,12950,360697.06,5,4,2,542,Loyal Customers,2,Cluster 2
+1668,1,9814,738731.81,5,3,5,535,Loyal Customers,2,Cluster 2
+1669,1,6604,410803.57,5,2,3,523,Recent / New Customers,0,Cluster 0
+1670,1,8294,446984.05,5,3,3,533,Loyal Customers,2,Cluster 2
+1671,1,7311,321390.78,5,2,2,522,Recent / New Customers,0,Cluster 0
+1672,2,5863,82707.65,1,1,1,111,Lost Customers,0,Cluster 0
+1674,1,4377,207856.69,5,1,1,511,Recent / New Customers,0,Cluster 0
+1675,1,7455,561531.46,5,2,4,524,Recent / New Customers,2,Cluster 2
+1676,1,9901,469310.09,5,3,3,533,Loyal Customers,2,Cluster 2
+1677,1,10813,530953.91,5,4,4,544,Champions,2,Cluster 2
+1678,1,9051,449238.88,5,3,3,533,Loyal Customers,2,Cluster 2
+1680,1,1848,89808.52,5,1,1,511,Recent / New Customers,0,Cluster 0
+1682,1,8213,384345.84,5,3,3,533,Loyal Customers,0,Cluster 0
+1684,1,13483,443779.16,5,5,3,553,Loyal Customers,2,Cluster 2
+1685,1,6879,384500.09,5,2,3,523,Recent / New Customers,0,Cluster 0
+1687,1,18860,910853.83,5,5,5,555,Champions,2,Cluster 2
+1693,1,8891,519906.63,5,3,4,534,Loyal Customers,2,Cluster 2
+1694,1,9887,641335.07,5,3,4,534,Loyal Customers,2,Cluster 2
+1695,1,5262,479787.18,5,1,3,513,Recent / New Customers,0,Cluster 0
+1697,1,9737,317963.98,5,3,2,532,Loyal Customers,0,Cluster 0
+1699,1,14650,869046.05,5,5,5,555,Champions,2,Cluster 2
+1700,2,7415,241292.75,1,2,1,121,Lost Customers,0,Cluster 0
+1702,1,7661,332550.3,5,2,2,522,Recent / New Customers,0,Cluster 0
+1703,1,17630,800338.9,5,5,5,555,Champions,2,Cluster 2
+1709,1,6048,309604.15,5,1,2,512,Recent / New Customers,0,Cluster 0
+1710,1,6465,365697.91,5,2,2,522,Recent / New Customers,0,Cluster 0
+1712,1,16533,656725.61,5,5,4,554,Champions,2,Cluster 2
+1717,1,19416,1056918.71,5,5,5,555,Champions,2,Cluster 2
+1718,1,25519,905195.68,5,5,5,555,Champions,2,Cluster 2
+1719,1,9785,371161.0,5,3,2,532,Loyal Customers,2,Cluster 2
+1720,1,7891,657094.7,5,2,4,524,Recent / New Customers,2,Cluster 2
+1723,1,6730,301559.78,5,2,2,522,Recent / New Customers,0,Cluster 0
+1725,1,10504,561432.08,5,4,4,544,Champions,2,Cluster 2
+1728,2,4865,343888.38,1,1,2,112,Lost Customers,0,Cluster 0
+1730,1,10291,275522.71,5,3,1,531,Loyal Customers,0,Cluster 0
+1731,1,3628,244217.74,5,1,1,511,Recent / New Customers,0,Cluster 0
+1733,1,8694,444678.58,5,3,3,533,Loyal Customers,2,Cluster 2
+1735,1,8130,288043.77,5,2,2,522,Recent / New Customers,0,Cluster 0
+1736,1,21653,856773.72,5,5,5,555,Champions,2,Cluster 2
+1737,1,9984,310228.03,5,3,2,532,Loyal Customers,0,Cluster 0
+1740,1,2240,108622.91,5,1,1,511,Recent / New Customers,0,Cluster 0
+1741,1,8303,564079.07,5,3,4,534,Loyal Customers,2,Cluster 2
+1742,1,9391,409318.22,5,3,3,533,Loyal Customers,2,Cluster 2
+1744,1,4174,189192.69,5,1,1,511,Recent / New Customers,0,Cluster 0
+1746,1,5332,493486.24,5,1,4,514,Recent / New Customers,0,Cluster 0
+1749,2,3232,186262.76,1,1,1,111,Lost Customers,0,Cluster 0
+1750,1,10174,788200.12,5,3,5,535,Loyal Customers,2,Cluster 2
+1752,1,13473,627505.13,5,5,4,554,Champions,2,Cluster 2
+1753,1,7394,416273.16,5,2,3,523,Recent / New Customers,0,Cluster 0
+1755,1,14858,457481.86,5,5,3,553,Loyal Customers,2,Cluster 2
+1756,1,6640,550779.03,5,2,4,524,Recent / New Customers,0,Cluster 0
+1757,1,8583,334841.58,5,3,2,532,Loyal Customers,0,Cluster 0
+1758,1,14913,380081.32,5,5,3,553,Loyal Customers,2,Cluster 2
+1759,1,17591,627001.28,5,5,4,554,Champions,2,Cluster 2
+1762,1,3635,201571.12,5,1,1,511,Recent / New Customers,0,Cluster 0
+1763,1,9114,379255.41,5,3,3,533,Loyal Customers,0,Cluster 0
+1764,1,5831,318607.55,5,1,2,512,Recent / New Customers,0,Cluster 0
+1765,1,8632,543554.72,5,3,4,534,Loyal Customers,2,Cluster 2
+1766,1,4048,177824.36,5,1,1,511,Recent / New Customers,0,Cluster 0
+1769,1,15859,508942.18,5,5,4,554,Champions,2,Cluster 2
+1770,1,8406,313107.34,5,3,2,532,Loyal Customers,0,Cluster 0
+1771,1,12846,551057.58,5,4,4,544,Champions,2,Cluster 2
+1772,1,16904,702268.49,5,5,5,555,Champions,2,Cluster 2
+1774,1,9961,485677.41,5,3,3,533,Loyal Customers,2,Cluster 2
+1775,1,13011,695651.77,5,4,5,545,Champions,2,Cluster 2
+1777,1,15609,682359.6,5,5,4,554,Champions,2,Cluster 2
+1779,1,10817,366563.43,5,4,2,542,Loyal Customers,2,Cluster 2
+1781,1,6172,247673.87,5,2,1,521,Recent / New Customers,0,Cluster 0
+1782,1,6509,304033.64,5,2,2,522,Recent / New Customers,0,Cluster 0
+1783,1,11191,339754.28,5,4,2,542,Loyal Customers,2,Cluster 2
+1785,1,5327,243145.96,5,1,1,511,Recent / New Customers,0,Cluster 0
+1786,1,17222,409056.76,5,5,3,553,Loyal Customers,2,Cluster 2
+1787,1,13743,756400.88,5,5,5,555,Champions,2,Cluster 2
+1788,1,12555,413425.29,5,4,3,543,Loyal Customers,2,Cluster 2
+1789,1,9635,462670.31,5,3,3,533,Loyal Customers,2,Cluster 2
+1791,1,6418,339990.57,5,2,2,522,Recent / New Customers,0,Cluster 0
+1793,1,3508,142241.73,5,1,1,511,Recent / New Customers,0,Cluster 0
+1794,1,8611,555047.52,5,3,4,534,Loyal Customers,2,Cluster 2
+1799,1,17429,787869.14,5,5,5,555,Champions,2,Cluster 2
+1805,1,8362,236061.59,5,3,1,531,Loyal Customers,0,Cluster 0
+1807,1,19270,984347.6,5,5,5,555,Champions,2,Cluster 2
+1808,1,6965,299466.87,5,2,2,522,Recent / New Customers,0,Cluster 0
+1809,1,17096,727287.22,5,5,5,555,Champions,2,Cluster 2
+1810,1,7465,382034.05,5,2,3,523,Recent / New Customers,0,Cluster 0
+1812,1,11233,1023160.08,5,4,5,545,Champions,2,Cluster 2
+1813,1,10759,736351.11,5,4,5,545,Champions,2,Cluster 2
+1815,1,9487,502660.76,5,3,4,534,Loyal Customers,2,Cluster 2
+1816,1,6365,295246.57,5,2,2,522,Recent / New Customers,0,Cluster 0
+1817,1,16885,1100614.69,5,5,5,555,Champions,2,Cluster 2
+1818,1,18079,952452.33,5,5,5,555,Champions,2,Cluster 2
+1820,1,3741,240633.18,5,1,1,511,Recent / New Customers,0,Cluster 0
+1823,1,8573,731437.4,5,3,5,535,Loyal Customers,2,Cluster 2
+1825,1,13515,549792.89,5,5,4,554,Champions,2,Cluster 2
+1826,1,6816,100424.82,5,2,1,521,Recent / New Customers,0,Cluster 0
+1827,1,10217,676019.58,5,3,4,534,Loyal Customers,2,Cluster 2
+1830,1,10716,509622.51,5,4,4,544,Champions,2,Cluster 2
+1833,2,3479,177521.48,1,1,1,111,Lost Customers,0,Cluster 0
+1834,1,7537,339187.67,5,2,2,522,Recent / New Customers,0,Cluster 0
+1837,2,8215,416586.97,1,3,3,133,At-Risk / High Spenders At Risk,0,Cluster 0
+1840,1,13887,391998.31,5,5,3,553,Loyal Customers,2,Cluster 2
+1842,1,12422,607374.04,5,4,4,544,Champions,2,Cluster 2
+1843,1,19911,874280.04,5,5,5,555,Champions,2,Cluster 2
+1844,1,9842,348771.55,5,3,2,532,Loyal Customers,0,Cluster 0
+1846,1,6701,227310.44,5,2,1,521,Recent / New Customers,0,Cluster 0
+1849,1,11156,465505.56,5,4,3,543,Loyal Customers,2,Cluster 2
+1851,1,5791,569813.88,5,1,4,514,Recent / New Customers,0,Cluster 0
+1852,1,17034,780478.74,5,5,5,555,Champions,2,Cluster 2
+1853,1,7700,250233.72,5,2,1,521,Recent / New Customers,0,Cluster 0
+1854,1,6338,508110.81,5,2,4,524,Recent / New Customers,0,Cluster 0
+1855,1,8507,505323.69,5,3,4,534,Loyal Customers,2,Cluster 2
+1856,1,8895,373823.02,5,3,2,532,Loyal Customers,0,Cluster 0
+1857,1,11759,753750.24,5,4,5,545,Champions,2,Cluster 2
+1858,1,7173,228902.57,5,2,1,521,Recent / New Customers,0,Cluster 0
+1859,1,8459,399228.09,5,3,3,533,Loyal Customers,0,Cluster 0
+1861,1,7688,501935.24,5,2,4,524,Recent / New Customers,2,Cluster 2
+1862,1,4380,129073.66,5,1,1,511,Recent / New Customers,0,Cluster 0
+1863,1,8987,631116.75,5,3,4,534,Loyal Customers,2,Cluster 2
+1871,1,7560,415966.44,5,2,3,523,Recent / New Customers,0,Cluster 0
+1872,2,9411,497395.22,1,3,4,134,At-Risk / High Spenders At Risk,2,Cluster 2
+1873,1,20708,905714.95,5,5,5,555,Champions,2,Cluster 2
+1874,1,8537,394397.64,5,3,3,533,Loyal Customers,0,Cluster 0
+1875,1,7258,489665.81,5,2,3,523,Recent / New Customers,0,Cluster 0
+1876,3,3474,250507.61,1,1,1,111,Lost Customers,0,Cluster 0
+1877,1,13173,996405.76,5,4,5,545,Champions,2,Cluster 2
+1879,520,3676,225153.88,1,1,1,111,Lost Customers,1,Cluster 1
+1880,1,10728,473025.04,5,4,3,543,Loyal Customers,2,Cluster 2
+1881,1,14774,350146.65,5,5,2,552,Loyal Customers,2,Cluster 2
+1882,1,5322,443035.44,5,1,3,513,Recent / New Customers,0,Cluster 0
+1885,1,18817,1006283.87,5,5,5,555,Champions,2,Cluster 2
+1891,1,8761,359590.21,5,3,2,532,Loyal Customers,0,Cluster 0
+1895,1,9757,402628.03,5,3,3,533,Loyal Customers,2,Cluster 2
+1896,1,13360,448992.31,5,5,3,553,Loyal Customers,2,Cluster 2
+1897,1,14059,739443.26,5,5,5,555,Champions,2,Cluster 2
+1898,1,11387,592178.75,5,4,4,544,Champions,2,Cluster 2
+1899,1,7285,215756.91,5,2,1,521,Recent / New Customers,0,Cluster 0
+1901,1,12414,672332.24,5,4,4,544,Champions,2,Cluster 2
+1902,1,9846,490742.41,5,3,3,533,Loyal Customers,2,Cluster 2
+1903,1,12943,608998.02,5,4,4,544,Champions,2,Cluster 2
+1904,1,15797,673222.89,5,5,4,554,Champions,2,Cluster 2
+1905,3,4196,216675.2,1,1,1,111,Lost Customers,0,Cluster 0
+1908,1,13672,1182793.67,5,5,5,555,Champions,2,Cluster 2
+1909,1,19150,484461.09,5,5,3,553,Loyal Customers,2,Cluster 2
+1910,1,18343,656744.75,5,5,4,554,Champions,2,Cluster 2
+1913,1,10022,541857.78,5,3,4,534,Loyal Customers,2,Cluster 2
+1915,1,13709,942134.66,5,5,5,555,Champions,2,Cluster 2
+1916,1,6759,312282.01,5,2,2,522,Recent / New Customers,0,Cluster 0
+1917,1,12148,824572.04,5,4,5,545,Champions,2,Cluster 2
+1918,1,7082,403894.23,5,2,3,523,Recent / New Customers,0,Cluster 0
+1919,1,12280,683375.84,5,4,4,544,Champions,2,Cluster 2
+1920,1,15882,854121.82,5,5,5,555,Champions,2,Cluster 2
+1921,1,7712,404701.46,5,2,3,523,Recent / New Customers,0,Cluster 0
+1923,1,8349,379599.8,5,3,3,533,Loyal Customers,0,Cluster 0
+1926,1,9333,347692.76,5,3,2,532,Loyal Customers,0,Cluster 0
+1928,1,9533,553948.43,5,3,4,534,Loyal Customers,2,Cluster 2
+1931,1,14633,1059446.45,5,5,5,555,Champions,2,Cluster 2
+1936,1,10134,484368.77,5,3,3,533,Loyal Customers,2,Cluster 2
+1937,1,9553,627216.46,5,3,4,534,Loyal Customers,2,Cluster 2
+1940,1,8733,245260.46,5,3,1,531,Loyal Customers,0,Cluster 0
+1941,1,17480,724348.1,5,5,5,555,Champions,2,Cluster 2
+1942,1,5532,53855.53,5,1,1,511,Recent / New Customers,0,Cluster 0
+1944,1,10040,463596.62,5,3,3,533,Loyal Customers,2,Cluster 2
+1945,1,4627,229205.8,5,1,1,511,Recent / New Customers,0,Cluster 0
+1946,1,9181,339760.48,5,3,2,532,Loyal Customers,0,Cluster 0
+1954,1,9983,803911.57,5,3,5,535,Loyal Customers,2,Cluster 2
+1955,1,12770,501598.93,5,4,4,544,Champions,2,Cluster 2
+1956,1,7121,256129.11,5,2,1,521,Recent / New Customers,0,Cluster 0
+1957,2465,2661,298895.39,1,1,2,112,Lost Customers,1,Cluster 1
+1958,1,8626,330031.02,5,3,2,532,Loyal Customers,0,Cluster 0
+1959,1,4827,492257.17,5,1,3,513,Recent / New Customers,0,Cluster 0
+1962,1,11210,633151.89,5,4,4,544,Champions,2,Cluster 2
+1964,1,10516,450438.03,5,4,3,543,Loyal Customers,2,Cluster 2
+1966,1,20906,734857.57,5,5,5,555,Champions,2,Cluster 2
+1967,2,11255,455334.88,1,4,3,143,At-Risk / High Spenders At Risk,2,Cluster 2
+1969,1,17858,932857.82,5,5,5,555,Champions,2,Cluster 2
+1971,1,9328,405605.69,5,3,3,533,Loyal Customers,2,Cluster 2
+1972,1,8579,203587.66,5,3,1,531,Loyal Customers,0,Cluster 0
+1973,1,4674,323773.98,5,1,2,512,Recent / New Customers,0,Cluster 0
+1975,1,6898,321551.44,5,2,2,522,Recent / New Customers,0,Cluster 0
+1976,1,11326,819952.37,5,4,5,545,Champions,2,Cluster 2
+1977,1,11752,355347.61,5,4,2,542,Loyal Customers,2,Cluster 2
+1979,1,4839,391908.78,5,1,3,513,Recent / New Customers,0,Cluster 0
+1980,2,4872,301607.57,1,1,2,112,Lost Customers,0,Cluster 0
+1981,2,5009,330554.3,1,1,2,112,Lost Customers,0,Cluster 0
+1983,1,10771,670464.83,5,4,4,544,Champions,2,Cluster 2
+1985,1,18313,268880.91,5,5,1,551,Loyal Customers,2,Cluster 2
+1986,1,6682,413552.98,5,2,3,523,Recent / New Customers,0,Cluster 0
+1987,1370,4311,246210.43,1,1,1,111,Lost Customers,1,Cluster 1
+1992,1,15161,495557.3,5,5,4,554,Champions,2,Cluster 2
+1993,1,8081,611368.8,5,2,4,524,Recent / New Customers,2,Cluster 2
+1994,1,8473,491674.77,5,3,3,533,Loyal Customers,2,Cluster 2
+1995,1,11324,469576.38,5,4,3,543,Loyal Customers,2,Cluster 2
+1996,1,6999,398669.81,5,2,3,523,Recent / New Customers,0,Cluster 0
+1997,1,10011,659551.87,5,3,4,534,Loyal Customers,2,Cluster 2
+1998,1,3730,94110.47,5,1,1,511,Recent / New Customers,0,Cluster 0
