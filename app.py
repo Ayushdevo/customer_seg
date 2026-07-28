@@ -99,4 +99,6 @@ if predict_btn:
                 st.write(response.content)
                 
             except Exception as e:
-                st.error(f"Error generating AI strategy: {str(e)}")
+                import logging
+                logging.error("Failed to generate AI strategy", exc_info=True)
+                st.error("Error generating AI strategy. Please verify your API key, check your network connection, or try again later.")
