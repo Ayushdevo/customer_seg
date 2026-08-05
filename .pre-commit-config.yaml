@@ -1,0 +1,15 @@
+repos:
+  - repo: https://github.com/psf/black
+    rev: 24.3.0
+    hooks:
+      - id: black
+  - repo: https://github.com/pycqa/ruff-pre-commit
+    rev: v0.0.265
+    hooks:
+      - id: ruff
+        args: ["check", "src", "tests"]
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: v6.1.0
+    hooks:
+      - id: isort
+        args: ["--profile", "black"]

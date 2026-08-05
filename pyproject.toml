@@ -1,0 +1,32 @@
+[project]
+name = "customer_seg"
+version = "0.1.0"
+description = "Customer segmentation dashboard with AI-driven marketing strategy generation."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+  { name = "Ayushdevo" }
+]
+dependencies = [
+  "streamlit>=1.15.0",
+  "pandas>=2.0.0",
+  "numpy>=1.24.0",
+  "scikit-learn>=1.6.0",
+  "joblib>=1.2.0",
+  "langchain-google-genai>=2.1.12",
+  "python-dotenv>=1.2.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pre-commit>=4.0",
+  "ruff>=0.0.0",
+  "black>=24.0",
+  "isort>=5.0"
+]
+
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"

@@ -1,0 +1,5 @@
+pytest>=8.0
+pre-commit>=4.0
+ruff>=0.0.0
+black>=24.0
+isort>=5.0
