@@ -122,3 +122,11 @@ def test_invalid_provider_configuration_fails_before_network(kwargs):
     from customer_seg import create_llm
     with pytest.raises(ValueError):
         create_llm(**kwargs)
+
+
+def test_cli_success_returns_zero_for_every_segment(monkeypatch, capsys):
+    from customer_seg import cli
+    monkeypatch.setattr(cli, 'load_models', lambda *args: (None, None))
+    monkeypatch.setattr(cli, 'predict_customer_cluster', lambda *args: 2)
+    assert cli.run_cli(['--recency','1','--frequency','2','--monetary','3']) == 0
+    assert 'Cluster 2' in capsys.readouterr().out

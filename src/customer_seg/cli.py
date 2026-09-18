@@ -14,15 +14,15 @@ def build_argument_parser() -> argparse.ArgumentParser:
     return parser
 
 
-def run_cli() -> int:
+def run_cli(argv: list[str] | None = None) -> int:
     parser = build_argument_parser()
-    args = parser.parse_args()
+    args = parser.parse_args(argv)
 
     model, scaler = load_models()
     cluster = predict_customer_cluster(model, scaler, args.recency, args.frequency, args.monetary)
     print(f"Cluster {cluster}: {CLUSTER_LABELS.get(cluster, 'Unknown segment')}")
-    return cluster
+    return 0
 
 
 if __name__ == "__main__":
-    run_cli()
+    raise SystemExit(run_cli())
