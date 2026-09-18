@@ -4,6 +4,7 @@ import math
 from numbers import Real
 
 import numpy as np
+import pandas as pd
 
 CLUSTER_LABELS = {
     0: "The VIPs",
@@ -31,7 +32,14 @@ def predict_customer_cluster(model, scaler, recency: float, frequency: float, mo
     frequency = validate_numeric_input(frequency, "Frequency", minimum=0.0)
     monetary = validate_numeric_input(monetary, "Monetary", minimum=0.0)
 
-    input_data = np.array([[recency, frequency, monetary]])
+    features = {"Recency": recency, "Frequency": frequency, "Monetary": monetary}
+    if hasattr(scaler, "feature_names_in_"):
+        names = list(scaler.feature_names_in_)
+        if len(names) != 3 or set(names) != set(features):
+            raise ValueError("Scaler feature names must be Recency, Frequency, and Monetary")
+        input_data = pd.DataFrame([[features[name] for name in names]], columns=names)
+    else:
+        input_data = np.array([[recency, frequency, monetary]])
     scaled_data = np.asarray(scaler.transform(input_data))
     if scaled_data.shape != (1, 3) or not np.issubdtype(scaled_data.dtype, np.number) or not np.isfinite(scaled_data).all():
         raise ValueError("Scaler must return one row of three finite numeric features")

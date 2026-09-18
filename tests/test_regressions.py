@@ -38,3 +38,16 @@ def test_invalid_scaled_features_never_reach_model(scaled):
         def predict(self, values): raise AssertionError('must not execute')
     with pytest.raises(ValueError, match='Scaler must'):
         predict_customer_cluster(Model(), Scaler(), 1, 2, 3)
+
+
+def test_prediction_respects_named_scaler_feature_order():
+    from customer_seg import predict_customer_cluster
+    class Scaler:
+        feature_names_in_ = ['Monetary', 'Recency', 'Frequency']
+        def transform(self, values):
+            assert list(values.columns) == self.feature_names_in_
+            assert values.iloc[0].tolist() == [300, 10, 5]
+            return values.to_numpy()
+    class Model:
+        def predict(self, values): return [0]
+    assert predict_customer_cluster(Model(), Scaler(), 10, 5, 300) == 0
