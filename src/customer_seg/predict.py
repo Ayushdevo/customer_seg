@@ -32,7 +32,9 @@ def predict_customer_cluster(model, scaler, recency: float, frequency: float, mo
     monetary = validate_numeric_input(monetary, "Monetary", minimum=0.0)
 
     input_data = np.array([[recency, frequency, monetary]])
-    scaled_data = scaler.transform(input_data)
+    scaled_data = np.asarray(scaler.transform(input_data))
+    if scaled_data.shape != (1, 3) or not np.issubdtype(scaled_data.dtype, np.number) or not np.isfinite(scaled_data).all():
+        raise ValueError("Scaler must return one row of three finite numeric features")
     predictions = np.asarray(model.predict(scaled_data))
     if predictions.shape != (1,):
         raise ValueError("Model must return exactly one cluster label")

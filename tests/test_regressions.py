@@ -27,3 +27,14 @@ def test_prediction_rejects_malformed_cluster_labels(prediction):
         def predict(self, values): return prediction
     with pytest.raises(ValueError):
         predict_customer_cluster(Model(), Scaler(), 1, 2, 3)
+
+
+@pytest.mark.parametrize('scaled', [[[1, 2]], [[1, 2, np.inf]], [['a', 'b', 'c']], []])
+def test_invalid_scaled_features_never_reach_model(scaled):
+    from customer_seg import predict_customer_cluster
+    class Scaler:
+        def transform(self, values): return scaled
+    class Model:
+        def predict(self, values): raise AssertionError('must not execute')
+    with pytest.raises(ValueError, match='Scaler must'):
+        predict_customer_cluster(Model(), Scaler(), 1, 2, 3)
