@@ -51,3 +51,11 @@ def test_prediction_respects_named_scaler_feature_order():
     class Model:
         def predict(self, values): return [0]
     assert predict_customer_cluster(Model(), Scaler(), 10, 5, 300) == 0
+
+
+def test_corrupt_artifacts_raise_loader_error(tmp_path):
+    from customer_seg.loaders import load_models, LoaderError
+    path = tmp_path / 'broken.pkl'
+    path.write_text('not a serialized model')
+    with pytest.raises(LoaderError, match='Unable to load'):
+        load_models(path, path)

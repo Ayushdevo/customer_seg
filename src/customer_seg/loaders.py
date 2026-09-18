@@ -22,8 +22,11 @@ def load_models(
     if not scaler_path.exists():
         raise LoaderError(f"Scaler file not found: {scaler_path}")
 
-    model = joblib.load(model_path)
-    scaler = joblib.load(scaler_path)
+    try:
+        model = joblib.load(model_path)
+        scaler = joblib.load(scaler_path)
+    except Exception as exc:
+        raise LoaderError("Unable to load model artifacts; check file integrity and library versions") from exc
     return model, scaler
 
 
