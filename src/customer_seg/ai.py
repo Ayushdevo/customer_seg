@@ -5,6 +5,10 @@ from typing import Any
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 
+class AIServiceError(ValueError):
+    """A strategy could not be generated or interpreted."""
+
+
 def build_marketing_prompt(
     predicted_cluster: int,
     recency: float,
