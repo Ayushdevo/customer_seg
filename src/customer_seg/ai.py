@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, TYPE_CHECKING
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+if TYPE_CHECKING:
+    from langchain_google_genai import ChatGoogleGenerativeAI
 
 
 class AIServiceError(ValueError):
@@ -33,6 +34,10 @@ def create_llm(
     model_name: str = "gemini-3.6-flash",
     temperature: float = 0.7,
 ) -> ChatGoogleGenerativeAI:
+    try:
+        from langchain_google_genai import ChatGoogleGenerativeAI
+    except ImportError as exc:
+        raise AIServiceError("Install langchain-google-genai to generate AI strategies") from exc
     return ChatGoogleGenerativeAI(
         model=model_name,
         google_api_key=google_api_key,
