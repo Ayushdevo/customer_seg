@@ -27,6 +27,10 @@ def load_models(
         scaler = joblib.load(scaler_path)
     except Exception as exc:
         raise LoaderError("Unable to load model artifacts; check file integrity and library versions") from exc
+    if not callable(getattr(model, "predict", None)):
+        raise LoaderError("Model artifact must provide a predict method")
+    if not callable(getattr(scaler, "transform", None)):
+        raise LoaderError("Scaler artifact must provide a transform method")
     return model, scaler
 
 

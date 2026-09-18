@@ -59,3 +59,12 @@ def test_corrupt_artifacts_raise_loader_error(tmp_path):
     path.write_text('not a serialized model')
     with pytest.raises(LoaderError, match='Unable to load'):
         load_models(path, path)
+
+
+def test_loaders_reject_wrong_artifact_types(tmp_path, monkeypatch):
+    from customer_seg import loaders
+    path = tmp_path / 'model.pkl'
+    path.touch()
+    monkeypatch.setattr(loaders.joblib, 'load', lambda path: {})
+    with pytest.raises(loaders.LoaderError, match='predict method'):
+        loaders.load_models(path, path)
