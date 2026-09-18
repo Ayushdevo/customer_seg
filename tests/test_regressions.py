@@ -68,3 +68,19 @@ def test_loaders_reject_wrong_artifact_types(tmp_path, monkeypatch):
     monkeypatch.setattr(loaders.joblib, 'load', lambda path: {})
     with pytest.raises(loaders.LoaderError, match='predict method'):
         loaders.load_models(path, path)
+
+
+@pytest.mark.parametrize('csv', ['wrong\n1\n', 'Recency,Frequency,Monetary\n', 'Recency,Frequency,Monetary\n1,2,inf\n', 'Recency,Frequency,Monetary\n1,-2,3\n'])
+def test_customer_csv_schema_is_validated(tmp_path, csv):
+    from customer_seg.loaders import load_data, LoaderError
+    path = tmp_path / 'data.csv'
+    path.write_text(csv)
+    with pytest.raises(LoaderError):
+        load_data(path)
+
+
+def test_customer_csv_preserves_extra_columns(tmp_path):
+    from customer_seg.loaders import load_data
+    path = tmp_path / 'data.csv'
+    path.write_text('Recency,Frequency,Monetary,Customer\n1,2,3,A\n')
+    assert load_data(path).iloc[0]['Customer'] == 'A'

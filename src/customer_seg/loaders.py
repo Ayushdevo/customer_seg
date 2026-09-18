@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import numpy as np
 import joblib
 import pandas as pd
 
@@ -39,4 +40,18 @@ def load_data(data_path: str | Path = "data/clustered_rfm_data.csv") -> pd.DataF
     if not data_path.exists():
         raise LoaderError(f"Data file not found: {data_path}")
 
-    return pd.read_csv(data_path)
+    try:
+        data = pd.read_csv(data_path)
+    except (OSError, ValueError, pd.errors.ParserError) as exc:
+        raise LoaderError("Unable to read customer CSV") from exc
+    required = ["Recency", "Frequency", "Monetary"]
+    if data.empty or not set(required).issubset(data.columns):
+        raise LoaderError("Customer CSV must contain rows and Recency, Frequency, Monetary columns")
+    try:
+        values = data[required].apply(pd.to_numeric, errors="raise")
+        if not np.isfinite(values.to_numpy(dtype=float)).all() or (values < 0).any().any():
+            raise ValueError("invalid RFM values")
+    except (TypeError, ValueError) as exc:
+        raise LoaderError("RFM columns must contain finite nonnegative numbers") from exc
+    data[required] = values
+    return data
