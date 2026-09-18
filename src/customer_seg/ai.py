@@ -40,13 +40,21 @@ def create_llm(
     model_name: str = "gemini-3.6-flash",
     temperature: float = 0.7,
 ) -> ChatGoogleGenerativeAI:
+    from .predict import validate_numeric_input
+    if not isinstance(google_api_key, str) or not google_api_key.strip():
+        raise AIServiceError("A nonempty Google API key is required")
+    if not isinstance(model_name, str) or not model_name.strip():
+        raise AIServiceError("A nonempty model name is required")
+    temperature = validate_numeric_input(temperature, "Temperature")
+    if temperature > 2:
+        raise AIServiceError("Temperature must be between 0 and 2")
     try:
         from langchain_google_genai import ChatGoogleGenerativeAI
     except ImportError as exc:
         raise AIServiceError("Install langchain-google-genai to generate AI strategies") from exc
     return ChatGoogleGenerativeAI(
-        model=model_name,
-        google_api_key=google_api_key,
+        model=model_name.strip(),
+        google_api_key=google_api_key.strip(),
         temperature=temperature,
     )
 

@@ -115,3 +115,10 @@ def test_provider_failures_are_exposed_as_stable_service_errors():
     assert isinstance(result.value.__cause__, RuntimeError)
     with pytest.raises(AIServiceError, match='prompt'):
         generate_strategy(LLM(), '  ')
+
+
+@pytest.mark.parametrize('kwargs', [{'google_api_key':' '}, {'google_api_key':'key','model_name':' '}, {'google_api_key':'key','temperature':float('nan')}, {'google_api_key':'key','temperature':3}])
+def test_invalid_provider_configuration_fails_before_network(kwargs):
+    from customer_seg import create_llm
+    with pytest.raises(ValueError):
+        create_llm(**kwargs)
