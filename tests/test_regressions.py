@@ -144,3 +144,12 @@ def test_cli_accepts_explicit_artifact_paths_and_reports_errors(monkeypatch, cap
     assert result.value.code == 2
     assert calls == [('m.pkl','s.pkl')]
     assert 'Missing artifact' in capsys.readouterr().err
+
+
+def test_cli_json_output_can_be_consumed_by_scripts(monkeypatch, capsys):
+    import json
+    from customer_seg import cli
+    monkeypatch.setattr(cli, 'load_models', lambda *args: (None, None))
+    monkeypatch.setattr(cli, 'predict_customer_cluster', lambda *args: 1)
+    assert cli.run_cli(['--recency','1','--frequency','2','--monetary','3','--json']) == 0
+    assert json.loads(capsys.readouterr().out) == {'cluster':1, 'label':'Churn Risk'}
