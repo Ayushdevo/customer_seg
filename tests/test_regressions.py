@@ -104,3 +104,14 @@ def test_strategy_extracts_text_blocks_and_rejects_empty_content():
     for content in ['', '   ', [], None, [{'type':'image', 'url':'x'}]]:
         with pytest.raises(AIServiceError):
             generate_strategy(LLM(content), 'prompt')
+
+
+def test_provider_failures_are_exposed_as_stable_service_errors():
+    from customer_seg import generate_strategy, AIServiceError
+    class LLM:
+        def invoke(self, prompt): raise RuntimeError('provider-specific failure')
+    with pytest.raises(AIServiceError) as result:
+        generate_strategy(LLM(), 'Write a plan')
+    assert isinstance(result.value.__cause__, RuntimeError)
+    with pytest.raises(AIServiceError, match='prompt'):
+        generate_strategy(LLM(), '  ')

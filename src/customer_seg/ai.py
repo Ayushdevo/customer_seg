@@ -52,7 +52,12 @@ def create_llm(
 
 
 def generate_strategy(llm: Any, prompt: str) -> str:
-    response = llm.invoke(prompt)
+    if not isinstance(prompt, str) or not prompt.strip():
+        raise AIServiceError("Strategy prompt must contain text")
+    try:
+        response = llm.invoke(prompt)
+    except Exception as exc:
+        raise AIServiceError("AI strategy generation failed; check provider access and retry") from exc
     content = getattr(response, "content", None)
     if isinstance(content, list):
         content = "\n".join(
