@@ -84,3 +84,11 @@ def test_customer_csv_preserves_extra_columns(tmp_path):
     path = tmp_path / 'data.csv'
     path.write_text('Recency,Frequency,Monetary,Customer\n1,2,3,A\n')
     assert load_data(path).iloc[0]['Customer'] == 'A'
+
+
+def test_marketing_prompt_rejects_invalid_metrics():
+    from customer_seg import build_marketing_prompt
+    with pytest.raises(ValueError):
+        build_marketing_prompt(0, 1, 2, float('nan'))
+    with pytest.raises(ValueError):
+        build_marketing_prompt(99, 1, 2, 3)
