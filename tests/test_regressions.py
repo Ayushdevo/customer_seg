@@ -130,3 +130,17 @@ def test_cli_success_returns_zero_for_every_segment(monkeypatch, capsys):
     monkeypatch.setattr(cli, 'predict_customer_cluster', lambda *args: 2)
     assert cli.run_cli(['--recency','1','--frequency','2','--monetary','3']) == 0
     assert 'Cluster 2' in capsys.readouterr().out
+
+
+def test_cli_accepts_explicit_artifact_paths_and_reports_errors(monkeypatch, capsys):
+    from customer_seg import cli
+    calls = []
+    def loader(model, scaler):
+        calls.append((model, scaler))
+        raise cli.LoaderError('Missing artifact')
+    monkeypatch.setattr(cli, 'load_models', loader)
+    with pytest.raises(SystemExit) as result:
+        cli.run_cli(['--recency','1','--frequency','2','--monetary','3','--model','m.pkl','--scaler','s.pkl'])
+    assert result.value.code == 2
+    assert calls == [('m.pkl','s.pkl')]
+    assert 'Missing artifact' in capsys.readouterr().err
