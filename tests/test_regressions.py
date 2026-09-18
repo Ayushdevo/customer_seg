@@ -92,3 +92,15 @@ def test_marketing_prompt_rejects_invalid_metrics():
         build_marketing_prompt(0, 1, 2, float('nan'))
     with pytest.raises(ValueError):
         build_marketing_prompt(99, 1, 2, 3)
+
+
+def test_strategy_extracts_text_blocks_and_rejects_empty_content():
+    from types import SimpleNamespace
+    from customer_seg import generate_strategy, AIServiceError
+    class LLM:
+        def __init__(self, content): self.content = content
+        def invoke(self, prompt): return SimpleNamespace(content=self.content)
+    assert generate_strategy(LLM([{'type':'text', 'text':'Offer loyalty rewards'}, {'type':'image', 'url':'x'}]), 'prompt') == 'Offer loyalty rewards'
+    for content in ['', '   ', [], None, [{'type':'image', 'url':'x'}]]:
+        with pytest.raises(AIServiceError):
+            generate_strategy(LLM(content), 'prompt')

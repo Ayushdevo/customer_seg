@@ -53,6 +53,13 @@ def create_llm(
 
 def generate_strategy(llm: Any, prompt: str) -> str:
     response = llm.invoke(prompt)
-    if not hasattr(response, "content"):
-        raise ValueError("LLM response object did not contain expected content")
-    return response.content
+    content = getattr(response, "content", None)
+    if isinstance(content, list):
+        content = "\n".join(
+            block if isinstance(block, str) else block["text"]
+            for block in content
+            if isinstance(block, str) or (isinstance(block, dict) and block.get("type") == "text" and isinstance(block.get("text"), str))
+        )
+    if not isinstance(content, str) or not content.strip():
+        raise AIServiceError("LLM response did not contain nonempty text")
+    return content.strip()
