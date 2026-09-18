@@ -33,7 +33,13 @@ def predict_customer_cluster(model, scaler, recency: float, frequency: float, mo
 
     input_data = np.array([[recency, frequency, monetary]])
     scaled_data = scaler.transform(input_data)
-    cluster = int(model.predict(scaled_data)[0])
+    predictions = np.asarray(model.predict(scaled_data))
+    if predictions.shape != (1,):
+        raise ValueError("Model must return exactly one cluster label")
+    label = predictions[0]
+    if isinstance(label, (bool, np.bool_)) or not isinstance(label, Real) or not math.isfinite(label) or label != int(label):
+        raise ValueError("Model cluster label must be a finite integer")
+    cluster = int(label)
     if cluster not in CLUSTER_LABELS:
         raise ValueError(f"Unknown cluster id returned by model: {cluster}")
     return cluster

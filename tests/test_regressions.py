@@ -16,3 +16,14 @@ def test_numeric_validation_rejects_invalid_values(value):
     from customer_seg import validate_numeric_input
     with pytest.raises(ValueError, match='finite number'):
         validate_numeric_input(value, 'Recency')
+
+
+@pytest.mark.parametrize('prediction', [[], [0, 1], [[0]], [.8], [np.nan], [True], ['0'], [99]])
+def test_prediction_rejects_malformed_cluster_labels(prediction):
+    from customer_seg import predict_customer_cluster
+    class Scaler:
+        def transform(self, values): return values
+    class Model:
+        def predict(self, values): return prediction
+    with pytest.raises(ValueError):
+        predict_customer_cluster(Model(), Scaler(), 1, 2, 3)
