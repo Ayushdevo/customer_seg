@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import math
+from numbers import Real
+
 import numpy as np
 
 CLUSTER_LABELS = {
@@ -16,8 +19,8 @@ CLUSTER_PROFILES = {
 
 
 def validate_numeric_input(value: float, name: str, minimum: float = 0.0) -> float:
-    if value is None:
-        raise ValueError(f"{name} must be provided")
+    if isinstance(value, (bool, np.bool_)) or not isinstance(value, Real) or not math.isfinite(value):
+        raise ValueError(f"{name} must be a finite number")
     if value < minimum:
         raise ValueError(f"{name} must be at least {minimum}")
     return value
