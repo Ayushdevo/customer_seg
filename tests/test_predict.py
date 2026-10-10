@@ -30,3 +30,7 @@ def test_predict_customer_cluster_invalid_inputs(value, name):
     scaler = DummyScaler()
     with pytest.raises(ValueError):
         predict_customer_cluster(model, scaler, 10 if name != "Recency" else value, 5 if name != "Frequency" else value, 100 if name != "Monetary" else value)
+
+
+def test_zero_rfm_values_are_valid():
+    assert predict_customer_cluster(DummyModel(), DummyScaler(), 0, 0, 0) == 0
