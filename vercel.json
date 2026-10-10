@@ -2,17 +2,9 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "version": 2,
   "framework": null,
-  "buildCommand": null,
-  "outputDirectory": ".",
   "functions": {
     "api/predict.py": {
       "excludeFiles": "{tests/**,docs/**,.github/**,data/**,*.md,*.ipynb}"
     }
-  },
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/index.html"
-    }
-  ]
+  }
 }
