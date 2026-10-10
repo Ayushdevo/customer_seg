@@ -3,22 +3,24 @@ name = "customer_seg"
 version = "0.1.0"
 description = "Customer segmentation dashboard with AI-driven marketing strategy generation."
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.12,<3.13"
 license = {text = "MIT"}
 authors = [
   { name = "Ayushdevo" }
 ]
 dependencies = [
-  "streamlit>=1.15.0",
-  "pandas>=2.0.0",
-  "numpy>=1.24.0",
+  "numpy>=1.26,<3",
+  "pandas>=2.1,<3",
   "scikit-learn==1.6.1",
-  "joblib>=1.2.0",
-  "langchain-google-genai>=2.1.12",
-  "python-dotenv>=1.2.1"
+  "joblib>=1.4,<2"
 ]
 
 [project.optional-dependencies]
+dashboard = [
+  "streamlit>=1.50,<2",
+  "langchain-google-genai>=2.1.12,<3",
+  "python-dotenv>=1.2.1,<2"
+]
 dev = [
   "pytest>=8.0",
   "pre-commit>=4.0",
