@@ -107,3 +107,28 @@ Create a web service from this repository using its `Dockerfile`. Set the extern
 Set the entrypoint to `app.py` and Python 3.11 if the platform supports choosing it. This repository's `pyproject.toml` defines the installable package in `src/`; a deployment environment must install the package (e.g. `pip install .`) so that `import customer_seg` works. Docker deployment is the primary supported configuration.
 
 **Security note:** Load `.pkl` files only from trusted sources; Python pickle/joblib files can execute code when loaded.
+
+
+---
+
+## Vercel deployment (static dashboard + Python Functions)
+
+Vercel serves `public/index.html` and invokes `api/predict.py` at `/api/predict`. This is a separate frontend from the original Streamlit app, which remains available through Docker.
+
+1. Import or reconnect this GitHub repository in your existing Vercel project. Use the repository **root directory**.
+2. Set the **Framework Preset** to **Other** and leave Build Command and Output Directory overrides blank; static assets live in `public/`.
+3. Use Python 3.12 on Vercel (supported by the project's `requires-python >=3.11`).
+4. Optionally add `GOOGLE_API_KEY` (or `GEMINI_API_KEY`) in Vercel → Project → Settings → Environment Variables. Never prefix server secrets with `VITE_` or `NEXT_PUBLIC_`.
+5. Redeploy the latest `main` commit. Open the domain, submit a prediction, and confirm the serverless endpoint responds.
+
+The request body for `POST /api/predict` is:
+
+```json
+{"recency":30,"frequency":5,"monetary":250,"generate_strategy":false}
+```
+
+A successful response includes `cluster`, `label`, and `profile`. With `generate_strategy:true`, the API returns `strategy` when Gemini is configured, otherwise `strategy_status:"not_configured"`. `GET /api/predict` provides a lightweight function health response. Note that the health response does not load the trained model; always test a POST before calling the deployment healthy.
+
+**Troubleshooting:** If the build exceeds Vercel's Python Function size limit, enable Vercel Large Functions in your project settings (existing projects can use `VERCEL_SUPPORT_LARGE_FUNCTIONS=1`) and redeploy. Check Vercel build/function logs for missing model artifacts and Python package installation issues. Vercel Python Functions are stateless: do not expect Streamlit session persistence in this frontend.
+
+**Security:** The frontend sends only numeric RFM inputs. API credentials stay on the server. The pretrained `joblib` model and scaler must come from a trusted source because deserialization can execute code.
