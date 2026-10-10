@@ -35,7 +35,7 @@ An interactive Customer Segmentation dashboard built using Streamlit, Scikit-Lea
 │   ├── kmeans_model.pkl         # Pre-trained K-Means Clustering model
 │   └── rfm_scaler.pkl           # StandardScaler used for RFM data scaling
 ├── env/                         # Python Virtual Environment
-├── app.py                       # Main Streamlit dashboard code
+├── streamlit_dashboard.py        # Main Streamlit dashboard code
 ├── .gitignore                   # Exclusions for virtual envs and caches
 └── README.md                    # Project documentation
 ```
@@ -45,7 +45,7 @@ An interactive Customer Segmentation dashboard built using Streamlit, Scikit-Lea
 ## ⚙️ How to Setup & Run
 
 ### Prerequisites
-Make sure you have **Python 3.8+** installed.
+Make sure you have **Python 3.12** installed.
 
 ### 1. Set Up the Virtual Environment
 Activate the pre-existing virtual environment in the `env` folder:
@@ -61,7 +61,7 @@ Activate the pre-existing virtual environment in the `env` folder:
 ### 2. Run the Dashboard
 Run the Streamlit application using:
 ```bash
-streamlit run app.py
+streamlit run streamlit_dashboard.py
 ```
 Open [http://localhost:8501](http://localhost:8501) in your browser.
 
@@ -104,7 +104,7 @@ Create a web service from this repository using its `Dockerfile`. Set the extern
 
 ### Streamlit Community Cloud (alternative)
 
-Set the entrypoint to `app.py` and Python 3.11 if the platform supports choosing it. This repository's `pyproject.toml` defines the installable package in `src/`; a deployment environment must install the package (e.g. `pip install .`) so that `import customer_seg` works. Docker deployment is the primary supported configuration.
+Set the entrypoint to `streamlit_dashboard.py` and Python 3.11 if the platform supports choosing it. This repository's `pyproject.toml` defines the installable package in `src/`; a deployment environment must install the package (e.g. `pip install .`) so that `import customer_seg` works. Docker deployment is the primary supported configuration.
 
 **Security note:** Load `.pkl` files only from trusted sources; Python pickle/joblib files can execute code when loaded.
 
@@ -132,3 +132,10 @@ A successful response includes `cluster`, `label`, and `profile`. With `generate
 **Troubleshooting:** If the build exceeds Vercel's Python Function size limit, enable Vercel Large Functions in your project settings (existing projects can use `VERCEL_SUPPORT_LARGE_FUNCTIONS=1`) and redeploy. Check Vercel build/function logs for missing model artifacts and Python package installation issues. Vercel Python Functions are stateless: do not expect Streamlit session persistence in this frontend.
 
 **Security:** The frontend sends only numeric RFM inputs. API credentials stay on the server. The pretrained `joblib` model and scaler must come from a trusted source because deserialization can execute code.
+
+
+### October 10, 2026 Vercel compatibility update
+
+Vercel now uses `public/index.html` for the website and `api/predict.py` for the Python Function. The original Streamlit application was moved to `streamlit_dashboard.py` so it will not be auto-detected as an unrelated Function. Production API dependencies are deliberately smaller than the dashboard dependencies; the Docker image installs the `dashboard` extra.
+
+Vercel's Python build should use Python 3.12. Leave the Root Directory as the repository root, Framework Preset as **Other**, and do not override Output Directory or Build Command. Deploy the latest `main` commit and inspect **Vercel build logs**, not only GitHub Actions, if it fails.
