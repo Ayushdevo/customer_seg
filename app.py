@@ -1,4 +1,5 @@
 import logging
+import os
 
 import streamlit as st
 
@@ -38,8 +39,9 @@ with st.expander("View Raw Customer Data"):
 
 with st.sidebar:
     st.header("1. API Configuration")
-    google_api_key = st.text_input("Google AI Studio API Key (as it is free)", type="password")
-    st.caption("Required to generate AI marketing strategies.")
+    configured_api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+    google_api_key = configured_api_key or st.text_input("Google AI Studio API Key", type="password")
+    st.caption("AI marketing strategies require an API key. Segmentation works without one.")
 
     st.markdown("---")
 
