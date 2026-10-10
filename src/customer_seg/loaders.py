@@ -42,7 +42,7 @@ def load_data(data_path: str | Path = "data/clustered_rfm_data.csv") -> pd.DataF
 
     try:
         data = pd.read_csv(data_path)
-    except (OSError, ValueError, pd.errors.ParserError) as exc:
+    except (OSError, UnicodeError, ValueError, pd.errors.ParserError) as exc:
         raise LoaderError("Unable to read customer CSV") from exc
     required = ["Recency", "Frequency", "Monetary"]
     if data.empty or not set(required).issubset(data.columns):
