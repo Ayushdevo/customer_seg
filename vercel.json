@@ -4,7 +4,7 @@
   "framework": null,
   "functions": {
     "api/predict.py": {
-      "excludeFiles": "{tests/**,docs/**,.github/**,data/**,*.md,*.ipynb}"
+      "excludeFiles": "{tests/**,docs/**,.github/**,data/**,public/**,streamlit_dashboard.py,*.ipynb}"
     }
   }
 }
