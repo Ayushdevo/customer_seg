@@ -71,3 +71,39 @@ Open [http://localhost:8501](http://localhost:8501) in your browser.
 1. **Interactive Inputs:** Drag sliders in the sidebar to define a customer's purchasing behaviour.
 2. **Clustering & Prediction:** Values are scaled via `rfm_scaler.pkl` and predictions are run using `kmeans_model.pkl`.
 3. **AI Insight Activation:** Provide your Google AI Studio API key to fetch personalized recommendations for that specific customer's cluster behavior directly from Gemini.
+
+
+---
+
+## Deployment (Docker / Render / Railway / Hugging Face Spaces)
+
+The deployment image starts Streamlit on **0.0.0.0:7860** and exposes a health endpoint at `/_stcore/health`. The trained model and scaler in `models/`, and `data/clustered_rfm_data.csv`, must remain in the repository.
+
+### Local Docker smoke test
+
+```bash
+docker build -t customer-seg .
+docker run --rm -p 7860:7860 customer-seg
+```
+
+Open http://localhost:7860 and check http://localhost:7860/_stcore/health. Verify model prediction first. The AI strategy feature is optional and needs a Google AI Studio key.
+
+To enable AI-generated strategies without requiring users to enter a key, pass the key at runtime (never put it in Git or the Docker image):
+
+```bash
+docker run --rm -p 7860:7860 -e GOOGLE_API_KEY=YOUR_KEY customer-seg
+```
+
+For production, set `GOOGLE_API_KEY` (or `GEMINI_API_KEY`) in the hosting platform's **secret environment variables**, rather than using a shell command that exposes it in history. If neither key is configured, visitors may supply their own key in the password-type sidebar field; clustering itself still works without AI credentials.
+
+### Hosted Docker deployment
+
+Create a web service from this repository using its `Dockerfile`. Set the external/container port to `7860`, make the service publicly reachable, and configure the health path `/_stcore/health`. Configure secrets in the hosting dashboard, not in repository files. On platforms which expect a configurable `PORT` variable instead of the image's port, set the service/container port to `7860` or adapt the launch command accordingly.
+
+**Verification checklist:** image builds, process starts without root privileges, health endpoint responds, model prediction works, and (only if configured) a test Gemini request produces a marketing strategy. A healthy HTTP response alone does not confirm that external model credentials are working.
+
+### Streamlit Community Cloud (alternative)
+
+Set the entrypoint to `app.py` and Python 3.11 if the platform supports choosing it. This repository's `pyproject.toml` defines the installable package in `src/`; a deployment environment must install the package (e.g. `pip install .`) so that `import customer_seg` works. Docker deployment is the primary supported configuration.
+
+**Security note:** Load `.pkl` files only from trusted sources; Python pickle/joblib files can execute code when loaded.
