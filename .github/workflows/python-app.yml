@@ -29,3 +29,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build deployment image
         run: docker build --tag customer-seg:ci .
+      - name: Verify running container health
+        run: |
+          docker run --detach --name customer-seg-ci --publish 7860:7860 customer-seg:ci
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:7860/_stcore/health; then
+              exit 0
+            fi
+            sleep 2
+          done
+          docker logs customer-seg-ci
+          exit 1
+      - name: Clean up container
+        if: always()
+        run: docker rm --force customer-seg-ci || true
