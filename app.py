@@ -1,9 +1,8 @@
 import logging
-import os
-
 import streamlit as st
 
 from customer_seg.ai import build_marketing_prompt, create_llm, generate_strategy
+from customer_seg.config import google_api_key_from_environment
 from customer_seg.loaders import LoaderError, load_data, load_models
 from customer_seg.predict import CLUSTER_LABELS, CLUSTER_PROFILES, predict_customer_cluster
 
@@ -39,9 +38,13 @@ with st.expander("View Raw Customer Data"):
 
 with st.sidebar:
     st.header("1. API Configuration")
-    configured_api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
-    google_api_key = configured_api_key or st.text_input("Google AI Studio API Key", type="password")
-    st.caption("AI marketing strategies require an API key. Segmentation works without one.")
+    configured_api_key = google_api_key_from_environment()
+    if configured_api_key:
+        google_api_key = configured_api_key
+        st.success("AI strategy service configured")
+    else:
+        google_api_key = st.text_input("Google AI Studio API Key", type="password")
+        st.caption("Optional: enter a key to generate strategies. Segmentation works without one.")
 
     st.markdown("---")
 
