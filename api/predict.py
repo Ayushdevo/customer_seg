@@ -112,6 +112,9 @@ class handler(BaseHTTPRequestHandler):
         self.respond(200, {"status": "ok", "service": "customer-segmentation"})
 
     def do_POST(self):
+        media_type = self.headers.get("Content-Type", "").split(";", 1)[0].strip().lower()
+        if media_type != "application/json":
+            return self.respond(415, {"error": "Content-Type must be application/json"})
         try:
             size = int(self.headers.get("Content-Length", "0"))
             if size <= 0 or size > 8192:
