@@ -14,7 +14,9 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
 from customer_seg.loaders import LoaderError, load_models
-from customer_seg.predict import CLUSTER_LABELS, CLUSTER_PROFILES, predict_customer_cluster
+from customer_seg.predict import (
+    CLUSTER_LABELS, CLUSTER_PROFILES, predict_customer_cluster, validate_numeric_input,
+)
 
 
 @lru_cache(maxsize=1)
@@ -59,7 +61,7 @@ def predict(payload: dict) -> dict:
         # Do not convert strings or bools to numeric values.
         if isinstance(value, bool) or not isinstance(value, (float, int)):
             raise ValueError(f"{name} must be a number")
-        values.append(value)
+        values.append(validate_numeric_input(value, name))
     cluster = predict_customer_cluster(*models(), *values)
     result = {
         "cluster": cluster,
