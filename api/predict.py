@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "src"))
 
 from customer_seg.loaders import LoaderError, load_models
+from customer_seg.ai import AIServiceError
 from customer_seg.predict import (
     CLUSTER_LABELS, CLUSTER_PROFILES, predict_customer_cluster, validate_numeric_input,
 )
@@ -32,23 +33,39 @@ def generate_marketing_strategy(cluster: int, recency: float, frequency: float, 
     prompt = build_marketing_prompt(cluster, recency, frequency, monetary)
     model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     if not model.replace("-", "").replace(".", "").isalnum():
-        raise ValueError("Invalid Gemini model identifier")
+        raise AIServiceError("Invalid Gemini model identifier")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     payload = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode("utf-8")
     request = Request(url, data=payload, headers={
         "Content-Type": "application/json", "x-goog-api-key": key
     }, method="POST")
-    with urlopen(request, timeout=20) as response:
-        result = json.load(response)
-    text_parts = [
-        part.get("text", "")
-        for candidate in result.get("candidates", [])
-        for part in candidate.get("content", {}).get("parts", [])
-        if isinstance(part, dict)
-    ]
-    strategy = "\n".join(x for x in text_parts if x.strip()).strip()
+    try:
+        with urlopen(request, timeout=20) as response:
+            result = json.load(response)
+    except (UnicodeError, json.JSONDecodeError) as exc:
+        raise AIServiceError("Gemini returned invalid JSON") from exc
+    return extract_strategy_text(result)
+
+
+def extract_strategy_text(result: object) -> str:
+    candidates = result.get("candidates") if isinstance(result, dict) else None
+    if not isinstance(candidates, list):
+        raise AIServiceError("Gemini returned no strategy text")
+    text_parts = []
+    for candidate in candidates:
+        content = candidate.get("content") if isinstance(candidate, dict) else None
+        parts = content.get("parts") if isinstance(content, dict) else None
+        if not isinstance(parts, list):
+            continue
+        for part in parts:
+            if not isinstance(part, dict) or part.get("thought") is True:
+                continue
+            value = part.get("text")
+            if isinstance(value, str) and value.strip():
+                text_parts.append(value.strip())
+    strategy = "\n".join(text_parts)
     if not strategy:
-        raise ValueError("Gemini returned no strategy text")
+        raise AIServiceError("Gemini returned no strategy text")
     return strategy
 
 
