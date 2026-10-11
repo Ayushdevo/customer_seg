@@ -62,7 +62,9 @@
       document.getElementById('profile').textContent=data.profile;
       const aiSection=document.getElementById('strategy-section');
       aiSection.hidden=!payload.generate_strategy;
-      document.getElementById('strategy').textContent=data.strategy||'AI strategy is not configured for this deployment.';
+      document.getElementById('strategy').textContent=data.strategy||(data.strategy_status==='unavailable'
+        ? 'AI strategy is temporarily unavailable. Your customer segment was predicted successfully.'
+        : 'AI strategy is not configured for this deployment.');
       results.style.display='block';status.textContent='Prediction complete.';
     }catch(error){status.textContent=error.message||'Service unavailable';}
     finally{button.disabled=false;}

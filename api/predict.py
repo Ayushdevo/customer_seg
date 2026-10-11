@@ -86,9 +86,15 @@ def predict(payload: dict) -> dict:
         "profile": CLUSTER_PROFILES[cluster],
     }
     if payload.get("generate_strategy") is True:
-        result["strategy"] = generate_marketing_strategy(cluster, *values)
-        if result["strategy"] is None:
-            result["strategy_status"] = "not_configured"
+        try:
+            result["strategy"] = generate_marketing_strategy(cluster, *values)
+        except (AIServiceError, HTTPError, URLError, TimeoutError):
+            result["strategy"] = None
+            result["strategy_status"] = "unavailable"
+        else:
+            result["strategy_status"] = (
+                "not_configured" if result["strategy"] is None else "generated"
+            )
     return result
 
 
