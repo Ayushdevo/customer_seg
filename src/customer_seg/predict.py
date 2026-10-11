@@ -20,7 +20,13 @@ CLUSTER_PROFILES = {
 
 
 def validate_numeric_input(value: float, name: str, minimum: float = 0.0) -> float:
-    if isinstance(value, (bool, np.bool_)) or not isinstance(value, Real) or not math.isfinite(value):
+    if isinstance(value, (bool, np.bool_)) or not isinstance(value, Real):
+        raise ValueError(f"{name} must be a finite number")
+    try:
+        finite = math.isfinite(value)
+    except OverflowError as exc:
+        raise ValueError(f"{name} must be a finite number") from exc
+    if not finite:
         raise ValueError(f"{name} must be a finite number")
     if value < minimum:
         raise ValueError(f"{name} must be at least {minimum}")
