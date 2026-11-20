@@ -52,22 +52,21 @@ def extract_strategy_text(result: object) -> str:
     candidates = result.get("candidates") if isinstance(result, dict) else None
     if not isinstance(candidates, list):
         raise AIServiceError("Gemini returned no strategy text")
-    text_parts = []
     for candidate in candidates:
         content = candidate.get("content") if isinstance(candidate, dict) else None
         parts = content.get("parts") if isinstance(content, dict) else None
         if not isinstance(parts, list):
             continue
+        text_parts = []
         for part in parts:
             if not isinstance(part, dict) or part.get("thought") is True:
                 continue
             value = part.get("text")
             if isinstance(value, str) and value.strip():
                 text_parts.append(value.strip())
-    strategy = "\n".join(text_parts)
-    if not strategy:
-        raise AIServiceError("Gemini returned no strategy text")
-    return strategy
+        if text_parts:
+            return "\n".join(text_parts)
+    raise AIServiceError("Gemini returned no strategy text")
 
 
 def predict(payload: dict) -> dict:
