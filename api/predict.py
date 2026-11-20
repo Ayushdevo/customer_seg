@@ -119,7 +119,10 @@ class handler(BaseHTTPRequestHandler):
             size = int(self.headers.get("Content-Length", "0"))
             if size <= 0 or size > 8192:
                 return self.respond(413, {"error": "Request must contain at most 8 KB of JSON"})
-            payload = json.loads(self.rfile.read(size))
+            body = self.rfile.read(size)
+            if len(body) != size:
+                return self.respond(400, {"error": "Incomplete JSON request body"})
+            payload = json.loads(body)
             result = predict(payload)
         except (ValueError, TypeError, json.JSONDecodeError) as exc:
             return self.respond(400, {"error": str(exc)})
