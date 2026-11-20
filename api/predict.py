@@ -15,6 +15,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from customer_seg.loaders import LoaderError, load_models
 from customer_seg.ai import AIServiceError
+from customer_seg.config import google_api_key_from_environment
 from customer_seg.predict import (
     CLUSTER_LABELS, CLUSTER_PROFILES, predict_customer_cluster, validate_numeric_input,
 )
@@ -26,7 +27,7 @@ def models():
 
 
 def generate_marketing_strategy(cluster: int, recency: float, frequency: float, monetary: float) -> str | None:
-    key = (os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY") or "").strip()
+    key = google_api_key_from_environment()
     if not key:
         return None
     from customer_seg.ai import build_marketing_prompt
