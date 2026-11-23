@@ -48,6 +48,8 @@ def load_data(data_path: str | Path = "data/clustered_rfm_data.csv") -> pd.DataF
     if data.empty or not set(required).issubset(data.columns):
         raise LoaderError("Customer CSV must contain rows and Recency, Frequency, Monetary columns")
     try:
+        if any(pd.api.types.is_bool_dtype(data[column]) for column in required):
+            raise ValueError("boolean RFM values")
         values = data[required].apply(pd.to_numeric, errors="raise")
         if not np.isfinite(values.to_numpy(dtype=float)).all() or (values < 0).any().any():
             raise ValueError("invalid RFM values")
