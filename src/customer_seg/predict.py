@@ -47,7 +47,8 @@ def predict_customer_cluster(model, scaler, recency: float, frequency: float, mo
     else:
         input_data = np.array([[recency, frequency, monetary]])
     scaled_data = np.asarray(scaler.transform(input_data))
-    if scaled_data.shape != (1, 3) or not np.issubdtype(scaled_data.dtype, np.number) or not np.isfinite(scaled_data).all():
+    numeric = scaled_data.dtype.kind in "iuf"
+    if scaled_data.shape != (1, 3) or not numeric or not np.isfinite(scaled_data).all():
         raise ValueError("Scaler must return one row of three finite numeric features")
     predictions = np.asarray(model.predict(scaled_data))
     if predictions.shape != (1,):

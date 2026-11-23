@@ -34,3 +34,12 @@ def test_predict_customer_cluster_invalid_inputs(value, name):
 
 def test_zero_rfm_values_are_valid():
     assert predict_customer_cluster(DummyModel(), DummyScaler(), 0, 0, 0) == 0
+
+
+def test_complex_features_are_rejected_before_prediction():
+    class ComplexScaler:
+        def transform(self, data):
+            return np.array([[1 + 2j, 3 + 0j, 4 + 0j]])
+
+    with pytest.raises(ValueError, match="finite numeric features"):
+        predict_customer_cluster(DummyModel(), ComplexScaler(), 10, 3, 40)
