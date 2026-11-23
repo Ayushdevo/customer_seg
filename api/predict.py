@@ -73,6 +73,9 @@ def extract_strategy_text(result: object) -> str:
 def predict(payload: dict) -> dict:
     if not isinstance(payload, dict):
         raise ValueError("Expected a JSON object")
+    generate_strategy = payload.get("generate_strategy", False)
+    if not isinstance(generate_strategy, bool):
+        raise ValueError("generate_strategy must be a boolean")
     values = []
     for name in ("recency", "frequency", "monetary"):
         value = payload.get(name)
@@ -86,7 +89,7 @@ def predict(payload: dict) -> dict:
         "label": CLUSTER_LABELS[cluster],
         "profile": CLUSTER_PROFILES[cluster],
     }
-    if payload.get("generate_strategy") is True:
+    if generate_strategy:
         try:
             result["strategy"] = generate_marketing_strategy(cluster, *values)
         except (AIServiceError, URLError, TimeoutError, ConnectionError, http.client.HTTPException):
