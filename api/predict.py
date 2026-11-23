@@ -102,6 +102,15 @@ def predict(payload: dict) -> dict:
     return result
 
 
+def _unique_json_object(pairs):
+    result = {}
+    for key, value in pairs:
+        if key in result:
+            raise ValueError("JSON request contains a duplicate object key")
+        result[key] = value
+    return result
+
+
 class handler(BaseHTTPRequestHandler):
     def respond(self, code: int, value: dict):
         output = json.dumps(value, allow_nan=False).encode("utf-8")
@@ -127,7 +136,7 @@ class handler(BaseHTTPRequestHandler):
             if len(body) != size:
                 return self.respond(400, {"error": "Incomplete JSON request body"})
             try:
-                payload = json.loads(body)
+                payload = json.loads(body, object_pairs_hook=_unique_json_object)
             except RecursionError:
                 return self.respond(400, {"error": "JSON request body is nested too deeply"})
             result = predict(payload)
