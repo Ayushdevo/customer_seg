@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 
-from .predict import CLUSTER_LABELS, predict_customer_cluster
+from .predict import CLUSTER_LABELS, predict_customer_cluster, validate_numeric_input
 from .loaders import LoaderError, load_models
 
 
@@ -23,8 +23,13 @@ def run_cli(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
 
     try:
+        values = (
+            validate_numeric_input(args.recency, "Recency"),
+            validate_numeric_input(args.frequency, "Frequency"),
+            validate_numeric_input(args.monetary, "Monetary"),
+        )
         model, scaler = load_models(args.model, args.scaler)
-        cluster = predict_customer_cluster(model, scaler, args.recency, args.frequency, args.monetary)
+        cluster = predict_customer_cluster(model, scaler, *values)
     except (LoaderError, ValueError) as exc:
         parser.error(str(exc))
     if args.json:
