@@ -52,10 +52,14 @@
   const form=document.getElementById('form'),status=document.getElementById('status');
   const button=document.getElementById('submit'),results=document.getElementById('results');
   form.addEventListener('submit',async e=>{
-    e.preventDefault();results.style.display='none';status.textContent='Analyzing…';button.disabled=true;
+    e.preventDefault();
+    if(button.disabled)return;
+    results.style.display='none';status.textContent='Analyzing…';button.disabled=true;
+    const request=new AbortController();
+    const timeout=setTimeout(()=>request.abort(),30000);
     const payload={recency:Number(document.getElementById('recency').value),frequency:Number(document.getElementById('frequency').value),monetary:Number(document.getElementById('monetary').value),generate_strategy:document.getElementById('ai').checked};
     try{
-      const response=await fetch('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
+      const response=await fetch('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),signal:request.signal});
       const data=await response.json();
       if(!response.ok)throw new Error(data.error||'Prediction failed');
       document.getElementById('label').textContent=data.label;
@@ -66,8 +70,12 @@
         ? 'AI strategy is temporarily unavailable. Your customer segment was predicted successfully.'
         : 'AI strategy is not configured for this deployment.');
       results.style.display='block';status.textContent='Prediction complete.';
-    }catch(error){status.textContent=error.message||'Service unavailable';}
-    finally{button.disabled=false;}
+    }catch(error){
+      status.textContent=request.signal.aborted?'The prediction request timed out. Try again.':(error.message||'Service unavailable');
+    }finally{
+      clearTimeout(timeout);
+      button.disabled=false;
+    }
   });
 </script>
 </body>
