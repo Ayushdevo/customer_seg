@@ -1,3 +1,4 @@
+from http.client import IncompleteRead
 from urllib.error import HTTPError, URLError
 
 import pytest
@@ -22,6 +23,7 @@ def configured_prediction(monkeypatch):
 
 @pytest.mark.parametrize("error", [
     AIServiceError("no text"), TimeoutError(), URLError("offline"),
+    ConnectionResetError(), IncompleteRead(b"{}"),
     HTTPError("https://provider.invalid", 429, "rate limited", {}, None),
 ])
 def test_provider_failure_preserves_segmentation(monkeypatch, configured_prediction, error):

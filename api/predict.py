@@ -1,6 +1,7 @@
 """Vercel serverless endpoint for customer segmentation and optional AI strategy."""
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import sys
@@ -88,7 +89,7 @@ def predict(payload: dict) -> dict:
     if payload.get("generate_strategy") is True:
         try:
             result["strategy"] = generate_marketing_strategy(cluster, *values)
-        except (AIServiceError, HTTPError, URLError, TimeoutError):
+        except (AIServiceError, URLError, TimeoutError, ConnectionError, http.client.HTTPException):
             result["strategy"] = None
             result["strategy_status"] = "unavailable"
         else:
