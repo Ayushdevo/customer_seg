@@ -1,4 +1,5 @@
 import logging
+from pathlib import Path
 import streamlit as st
 
 from customer_seg.ai import build_marketing_prompt, create_llm, generate_strategy
@@ -8,6 +9,7 @@ from customer_seg.predict import CLUSTER_LABELS, CLUSTER_PROFILES, predict_custo
 
 
 logging.basicConfig(level=logging.INFO)
+ROOT = Path(__file__).resolve().parent
 
 st.set_page_config(page_title="Customer Segmentation", layout="wide")
 
@@ -18,12 +20,12 @@ st.markdown("---")
 
 @st.cache_resource
 def cached_load_models():
-    return load_models()
+    return load_models(ROOT / "models/kmeans_model.pkl", ROOT / "models/rfm_scaler.pkl")
 
 
 @st.cache_data
 def cached_load_data():
-    return load_data()
+    return load_data(ROOT / "data/clustered_rfm_data.csv")
 
 
 try:
