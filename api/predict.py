@@ -4,6 +4,7 @@ from __future__ import annotations
 import http.client
 import json
 import os
+import re
 import sys
 from functools import lru_cache
 from http.server import BaseHTTPRequestHandler
@@ -33,8 +34,8 @@ def generate_marketing_strategy(cluster: int, recency: float, frequency: float, 
         return None
     from customer_seg.ai import build_marketing_prompt
     prompt = build_marketing_prompt(cluster, recency, frequency, monetary)
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
-    if not model.replace("-", "").replace(".", "").isalnum():
+    model = os.getenv("GEMINI_MODEL", "").strip() or "gemini-2.5-flash"
+    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", model):
         raise AIServiceError("Invalid Gemini model identifier")
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     payload = json.dumps({"contents": [{"parts": [{"text": prompt}]}]}).encode("utf-8")
