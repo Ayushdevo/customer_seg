@@ -123,7 +123,10 @@ class handler(BaseHTTPRequestHandler):
             body = self.rfile.read(size)
             if len(body) != size:
                 return self.respond(400, {"error": "Incomplete JSON request body"})
-            payload = json.loads(body)
+            try:
+                payload = json.loads(body)
+            except RecursionError:
+                return self.respond(400, {"error": "JSON request body is nested too deeply"})
             result = predict(payload)
         except (ValueError, TypeError, json.JSONDecodeError) as exc:
             return self.respond(400, {"error": str(exc)})
