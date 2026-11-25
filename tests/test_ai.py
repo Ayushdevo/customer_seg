@@ -25,6 +25,16 @@ def test_build_marketing_prompt_rejects_boolean_cluster(cluster):
         build_marketing_prompt(cluster, 30, 5, 200)
 
 
+@pytest.mark.parametrize("cluster", [1.0, [], {}, 3])
+def test_build_marketing_prompt_rejects_invalid_cluster_ids(cluster):
+    with pytest.raises(ValueError, match="Unknown customer cluster"):
+        build_marketing_prompt(cluster, 30, 5, 200)
+
+
+def test_build_marketing_prompt_accepts_numpy_integer_cluster():
+    assert "Cluster 1" in build_marketing_prompt(np.int64(1), 30, 5, 200)
+
+
 def test_generate_strategy_returns_content():
     llm = DummyLLM("Test response")
     response = generate_strategy(llm, "prompt")
