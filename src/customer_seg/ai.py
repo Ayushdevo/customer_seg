@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from typing import Any, TYPE_CHECKING
 
+import numpy as np
+
 if TYPE_CHECKING:
     from langchain_google_genai import ChatGoogleGenerativeAI
 
@@ -17,7 +19,7 @@ def build_marketing_prompt(
     monetary: float,
 ) -> str:
     from .predict import CLUSTER_LABELS, validate_numeric_input
-    if isinstance(predicted_cluster, bool) or predicted_cluster not in CLUSTER_LABELS:
+    if isinstance(predicted_cluster, (bool, np.bool_)) or predicted_cluster not in CLUSTER_LABELS:
         raise ValueError("Unknown customer cluster")
     recency = validate_numeric_input(recency, "Recency")
     frequency = validate_numeric_input(frequency, "Frequency")
