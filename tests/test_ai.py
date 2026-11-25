@@ -1,3 +1,4 @@
+import numpy as np
 import pytest
 
 from customer_seg.ai import AIServiceError, build_marketing_prompt, create_llm, generate_strategy
@@ -16,6 +17,12 @@ def test_build_marketing_prompt_contains_cluster_and_values():
     assert "Cluster 1" in prompt
     assert "30 days" in prompt
     assert "$200.00" in prompt
+
+
+@pytest.mark.parametrize("cluster", [True, np.bool_(True)])
+def test_build_marketing_prompt_rejects_boolean_cluster(cluster):
+    with pytest.raises(ValueError, match="Unknown customer cluster"):
+        build_marketing_prompt(cluster, 30, 5, 200)
 
 
 def test_generate_strategy_returns_content():
