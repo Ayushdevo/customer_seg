@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from numbers import Integral
 from typing import Any, TYPE_CHECKING
 
 import numpy as np
@@ -19,7 +20,9 @@ def build_marketing_prompt(
     monetary: float,
 ) -> str:
     from .predict import CLUSTER_LABELS, validate_numeric_input
-    if isinstance(predicted_cluster, (bool, np.bool_)) or predicted_cluster not in CLUSTER_LABELS:
+    if (isinstance(predicted_cluster, (bool, np.bool_))
+            or not isinstance(predicted_cluster, Integral)
+            or predicted_cluster not in CLUSTER_LABELS):
         raise ValueError("Unknown customer cluster")
     recency = validate_numeric_input(recency, "Recency")
     frequency = validate_numeric_input(frequency, "Frequency")
